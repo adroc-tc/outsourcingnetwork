@@ -3,6 +3,7 @@
 ```bash
 npm install
 ```
+Important: Use npm 8.9.4 version to install some libraries
 
 ## Usage
 Access `http://localhost:3000/test` to see the website
