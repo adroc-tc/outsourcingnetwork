@@ -1,0 +1,185 @@
+
+
+
+body {
+  padding-top: 75px;
+  background: url("/img/mountain_xxl.jpg") no-repeat top center fixed;
+/*  background-size: cover;*/
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  body {
+    background: url("/img/mountain_xxxl.jpg") no-repeat top center fixed;
+  }
+}
+
+.container {
+  Padding-top: 45px;
+  background-color: rgba(255, 255, 255, 1.0);
+  padding-bottom: 125px;
+}
+
+.tagline {
+  font-size: 70px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: rgb(18, 53, 90);
+
+  margin-top: 1.75rem;
+  text-shadow: -1px 1px 2px #FFF;
+}
+
+
+h4 {
+  margin-bottom: 125px;
+}
+
+.carousel-item h4 {
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+
+#ourLogo {
+  font-size: 1.8rem;
+  color: #002268;
+}
+
+
+.weProvide {
+  list-style: disc inside;
+  padding-bottom: 20px;
+}
+
+.thumbnail {
+  margin: 20px 0;
+}
+
+a h2 {
+  padding: 0.25rem 0;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: rgba(0,0,0, 0.65);
+  width: 60px;
+  height: 60px;
+}
+
+.carousel-inner {
+  height: 150px;
+}
+
+.carousel-indicators li {
+  box-shadow: 2px 2px 2px lightgray;
+  height: 5px;
+}
+
+#spacer {
+  height: 85px;
+}
+
+.icon-wrapper {
+  color: rgba(18, 53, 90, 0.65) !important;
+/*  color: #FFF !important;*/
+  display: inline-block;
+}
+
+.carousel-item {
+/*  text-shadow: 2px 2px 2px rgba(243, 240, 245, 0.95);*/
+}
+/*
+
+.navbar, .navbar-brand {
+  min-height: 60px;
+}
+
+.navbar-toggle {
+  margin-top: 13px;
+}
+
+*/
+
+#more_circle {
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  color: #3E505b;
+  margin-bottom: 900px;
+}
+
+.fa-angle-double-down {
+  margin-top: 5px;
+}
+
+.scroll a {
+  color: #3E505b;
+}
+
+.preview {
+  display: block;
+  color: #000 !important;
+}
+
+.link-wrapper {
+  height: 200px;
+  padding-top:10px;
+  position: relative;
+}
+
+.icon-link {
+  display: block;
+}
+
+.icon-link h3{
+  line-height: 30px;
+  margin: 0 0;
+  color: rgba(18, 53, 90, 0.65) !important;
+}
+
+.box_hover{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding-left: 5px;
+  width: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  transition: 0.2s linear;
+  vertical-align: middle;
+  color: transparent;
+}
+
+a:hover div.box_hover {
+  width: 20px;
+  color: white;
+}
+
+
+.helper {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.helper+svg {
+  vertical-align: middle;
+}
+
+.icon-wrapper {
+  color: #03120E;
+}
+
+.links {
+  margin-top: 40px;
+}
+
+.col-md-3.link {
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+}

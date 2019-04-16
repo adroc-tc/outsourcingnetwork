@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HON Events</title>
+    <link href="/favicon.ico" type="image/x-icon" rel="icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.1.0/webcomponents-loader.js" integrity="sha256-/yxQxuxBLYpTKkkwc73/bugLt4rBmKwXmZuFucG2AVQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/nav_style.css">
+    <link rel="stylesheet" href="/stylesheets/calendar.css">
+    <link rel="stylesheet" href="/stylesheets/events.css">
+    <script defer src="/js/fontawesome-all.js"></script>
+  </head>
+  <body>
+    <% include partials/navigation %>
+
+    <div id="image-box">
+      <img class="top" src="/img/Backgrounds/event.jpg">
+      <div class="top-center">
+        <h1>
+          <strong>
+            Exploring New Insights &amp; New Opportunities
+          </strong>
+        </h1>
+      </div>
+
+    </div>
+
+    <div class="container container-event">
+      <div class="row justify-content-center">
+        <div class="col-md-12 tagline event-tagline">
+          Join us at an Event
+        </div>
+        <div class="col-lg-7 col-md-12">
+          <div class="container-fluid">
+            <h2 class="text-center event-header">Upcoming Events</h2>
+            <% var eventCount = 0; %>
+            <% events.forEach(function(event){ %>
+            <% event.startDate = moment(event.startDate).add(7, 'hours'); %>
+            <% event.endDate = moment(event.endDate).add(7, 'hours'); %>
+            <% if(event.endDate.isSameOrAfter(currentDate, 'day') && eventCount < 8) { %>
+            <div class="list-group-item">
+              <div class="row">
+                <div class="col-12 event-name">
+                  <%= event.eventName %>
+                </div>
+                <div class="col-6 text-center event-date">
+                  <%= event.startDate.format("MM/DD/YYYY") %> - <%= event.endDate.format("MM/DD/YYYY") %>
+                </div>
+                <div class="col-6 text-right">
+                  <%= event.location %>
+                </div>
+              </div>
+            </div>
+            <% eventCount++; %>
+            <% } %> <!--End of if Statement-->
+            <% }) %> <!--End of forEach-->
+
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-12">
+          <% include partials/calendar %>
+        </div>
+      </div>
+    </div>
+
+    <% include partials/footer %>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js" integrity="sha256-zG8v+NWiZxmjNi+CvUYnZwKtHzFtdO8cAKUIdB8+U9I=" crossorigin="anonymous"></script>
+<!--    <script src="/js/calendar.js" type="text/javascript"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </body>
+</html>

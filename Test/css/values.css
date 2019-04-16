@@ -1,0 +1,120 @@
+body {
+  padding-top: 70px;
+  background: url("../img/mountain_xxl.jpg") no-repeat top center fixed;
+/*  background-size: cover;*/
+  background-color: #FFF;
+  font-family: 'Quattrocento Sans', sans-serif;
+  overflow-y: scroll;
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  body {
+    background: url("../img/mountain_xxxl.jpg") no-repeat top center fixed;
+  }
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 1.0);
+  padding-top: 25px;
+  padding-bottom: 125px;
+}
+
+
+
+h5 {
+
+  padding: 0.85rem 1rem;
+}
+
+blockquote {
+  font: 14px/20px italic Times, serif;
+  padding: 8px;
+  background-color: #faebbc;
+  border-top: 1px solid #e1cc89;
+  border-bottom: 1px solid #e1cc89;
+  margin: 5px;
+  background-image: url(../img/openquote1.gif);
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-indent: 23px;
+  margin: 20px 5.0rem;
+  width: 100%;
+}
+
+blockquote span {
+  display: block;
+  background-image: url(../img/closequote1.gif);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.preview {
+  display: block;
+  color: #000 !important;
+}
+
+.link-wrapper {
+  height: 200px;
+  padding-top:10px;
+  position: relative;
+}
+
+.icon-link {
+  display: block;
+}
+
+.icon-link h3{
+  line-height: 30px;
+  margin: 0 0;
+  color: rgba(18, 53, 90, 0.65) !important;
+}
+
+.box_hover{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding-left: 5px;
+  width: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  transition: 0.2s linear;
+  vertical-align: middle;
+  color: transparent;
+}
+
+a:hover div.box_hover {
+  width: 20px;
+  color: white;
+}
+
+
+.helper {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.helper+svg {
+  vertical-align: middle;
+}
+
+.icon-wrapper {
+  color: rgba(18, 53, 90, 0.65) !important;
+/*  color: #FFF !important;*/
+  display: inline-block;
+}
+
+.link_row {
+  padding-top: 100px;
+}
+
+#kudos{
+  padding-top: 80px;
+}
+
+.col-md-3.link {
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+}

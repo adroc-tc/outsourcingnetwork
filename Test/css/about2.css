@@ -1,0 +1,36 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background: url("../img/bg1.jpg") no-repeat top center;
+  background-color: #FCF5D1;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.jumbotron {
+  background-color: transparent;
+  color: #002268;
+}
+
+.jumbotron p {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.column p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.column h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.column {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#after-image {
+  position: absolute;
+  top: 1200px;
+}

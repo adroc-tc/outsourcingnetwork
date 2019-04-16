@@ -1,0 +1,187 @@
+body {
+  background-position: top +45px center;
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  body {
+    background-position: top -250px center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-position: top center;
+  }
+}
+
+.container-fluid.main {
+  Padding-top: 15px;
+  background-color: rgba(255, 255, 255, 1.0);
+  padding-bottom: 5px;
+}
+
+.tagline {
+  font-size: 3.85vw;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: rgb(18, 53, 90);
+  margin-top: 1.75rem;
+  margin-bottom: 0.75vw;
+  text-shadow: -1px 1px 2px #FFF;
+}
+
+h2.tagline {
+  font-size: 50px;
+  margin-top: 0;
+}
+
+h4 {
+  margin-bottom: 15px;
+}
+
+.carousel-item h4 {
+  font-weight: 700;
+  font-size: 2.25vw;
+  text-shadow:  -1px 1px 0 #CCC,
+                1px -1px 0 #CCC,
+                1px 1px 0 #CCC,
+                -1px -1px 0 #CCC;
+}
+
+.carousel-item {
+  margin-top: 2.25rem;
+}
+
+.weProvide {
+  list-style: disc inside;
+  padding-bottom: 20px;
+}
+
+.thumbnail {
+  margin: 20px 0;
+}
+
+a h2 {
+  padding: 0.25rem 0;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: rgba(0,0,0, 0.65);
+  width: 60px;
+  height: 60px;
+}
+
+.carousel-inner {
+  height: 150px;
+}
+
+.carousel-indicators li {
+  box-shadow: 2px 2px 2px lightgray;
+  height: 5px;
+}
+
+#spacer {
+  height: 85px;
+}
+
+#more_circle {
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  color: #3E505b;
+  margin-bottom: 30px;
+}
+
+.cognitive {
+  color: #FFF;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5vw;
+  font-family: 'Raleway' sans-serif;
+  border-radius: 5px;
+  margin-bottom: 75px;
+  padding-top: 125px;
+  padding-right: 75px;
+}
+
+
+.fa-angle-double-down {
+  margin-top: 5px;
+}
+
+.scroll a {
+  color: #3E505b;
+}
+
+.intro_content {
+  padding: 0.5rem 0;
+  font-weight: 500;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+.container-fluid {
+  background-color: transparent;
+}
+
+.testify {
+  background-color: #002268;
+  color: #FFF;
+}
+
+.client-quote {
+  font-style: italic;
+  background-color: #002268;
+  background-image: url(/img/openquotes2-tb.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-indent: 50px;
+  color: #FFF;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 30px 0;
+  font-family: "Raleway" sans-serif;
+  margin-top: 2.0rem;
+}
+
+.client-quote span {
+  display: block;
+  background-image: url(/img/closequotes2-tb.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  top: -12%;
+}
+
+.carousel-inner .carousel-item {
+  transition: -webkit-transform 2s ease;
+  transition: transform 2s ease;
+  transition: transform 2s ease, -webkit-transform 2s ease;
+}
+.call-out {
+  margin-top: 140px;
+}
+
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(7.5deg); }
+   95% { transform: rotate(-7.5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+#scroll_down svg {
+  display: inline-block;
+  animation: wiggle 2.5s infinite;
+}
+
+#scroll_down:hover svg {
+  animation: none;
+}

@@ -1,0 +1,39 @@
+blockquote {
+  /*font: 14px/20px italic Times, serif;*/
+  font-style: italic;
+  padding: 15px;
+  background-color: rgba(62, 80, 91, 0.30);
+  border: 1px solid #2E3B43;
+  margin: 5px;
+  background-image: url(/img/openquotes2-tb.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  color: #2E3B43;
+/*  margin: 20px 5.0rem;*/
+  width: 100%;
+}
+
+blockquote p:first-child {
+  text-indent: 40px;
+}
+
+blockquote p {
+  margin-bottom: 1rem;
+}
+
+.blockquote-footer {
+  color: #2E3B43 !important;
+}
+
+blockquote span {
+  display: block;
+  background-image: url(/img/closequotes2-tb.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.quote-attribute {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-style: italic;
+}

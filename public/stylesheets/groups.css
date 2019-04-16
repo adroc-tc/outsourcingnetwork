@@ -1,0 +1,42 @@
+/* This stylesheet will handle styles common to all *
+ * "group" pages                                    */
+
+.role {
+  color: #002268 !important;
+  font-weight: bold;
+  padding-top: .75rem;
+
+}
+
+.bio {
+  border: 1px solid #002268;
+  padding: 10px;
+  margin-bottom: 20px;
+  height: auto;
+  overflow: auto;
+}
+
+.bio p {
+  margin-bottom: 0.5rem;
+}
+
+.bio p:last-of-type {
+  margin-bottom: 0;
+}
+
+.our-staff {
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  color: #002268;
+}
+
+
+.bio>svg, .bio>img {
+  float: left;
+  margin-right: 0.5rem;
+  height: auto;
+}
+

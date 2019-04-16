@@ -1,0 +1,166 @@
+.form-part {
+  border-bottom: thick solid black;
+  border-left: thin solid black;
+  border-right: thin solid black;
+  border-top: thick solid black;
+  width: 100%;
+  padding: 0 0.75rem;
+}
+
+label {
+  text-indent: 0.25rem;
+  font-weight: bold;
+}
+
+.part-header h5 {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  background-color: black;
+  color: white !important;
+  margin: 0;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+
+#legalQuestion, #trainingQuestion {
+  display: inline-flex;
+}
+
+form p {
+  margin-bottom: 5px;
+}
+
+.shade {
+  background-color: lightgray;
+  padding-bottom: 1rem;
+  margin: 0 0.25rem;
+}
+
+.no-shade {
+  padding-bottom: 1rem;
+  margin: 0 0.25rem;
+}
+
+form h5 {
+  color: black !important;
+}
+
+#form_container
+{
+	padding:15px 15px;
+	margin-top:15px;
+	background: rgba(0,0,0,0.5);
+	color:#fff;
+}
+/*
+body
+{
+	background-color: #000;
+	background-image: url("images/stduio-2035349_1280.jpg");
+	background-size: cover;
+	background-repeat:no-repeat;
+
+}
+*/
+.upload-btn-wrapper
+{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-btn-wrapper input[type=file]
+{
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+p {
+  font-size: calc(15px + 0.50vw);
+}
+
+li {
+  font-size: calc(15px);
+}
+
+h2 {
+  font-size: calc(32px);
+}
+
+h4 {
+  font-size: calc(24px);
+}
+
+h5 {
+  font-size: calc(20px);
+}
+h1 {
+  font-size: calc(2.5rem);
+}
+
+#training, #flexibility, #preferred {
+  display: none;
+}
+
+.nav-link {
+  font-size: calc(15px + 0.50vw);
+}
+
+.toggle-content {
+  display: none;
+}
+
+.toggle-content.is-visible {
+  display: block;
+}
+
+
+input.empty:required, select.empty:required {
+  border-color: red;
+}
+
+/**
+ * style input elements that have a required
+ * attribute and a focus state
+ */
+input:required:focus, select:required:focus {
+  border: 1px solid red;
+  outline: none;
+}
+
+/**
+ * style input elements that have a required
+ * attribute and a hover state
+ */
+input:required:hover, select:required:hover {
+  opacity: 1;
+}
+
+p.errmsg {
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+  display: none;
+}
+
+p.errmsg.isVisible {
+  display: block;
+}
+
+.error {
+  color: red;
+  text-indent: 0.25rem;
+}
+
+.helpText {
+  display: inline-block;
+  padding-left: 10px;
+}

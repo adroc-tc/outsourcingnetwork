@@ -1,0 +1,41 @@
+body {
+  background: url("/img/tab-mountain_xxl.jpg") no-repeat top center;
+  background-position: top -200px center;
+  background-size: 100%;
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  body {
+    background-position: top -650px center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-position: top center;
+  }
+}
+
+#top {
+  background-color: white;
+  margin-top: 350px;
+  padding: 30px 20px 50px 20px;
+  margin-bottom: 0;
+  min-height: 0px;
+}
+
+.about a {
+  color: #FFF !important;
+  text-decoration: underline;
+}
+
+.value {
+  padding-bottom: 1.5rem;
+}
+
+.bio img {
+  width: 175px;
+  display: block;
+}

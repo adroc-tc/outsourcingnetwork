@@ -1,0 +1,138 @@
+/*  This contains site-wide styling for the navigation bar  *
+ *  and the stardrdized links at the bottom of the pages    */
+
+.navbar-brand, .nav-item, .nav-link {
+  color: #002268 !important;
+  transition: all 0.7s ease-out;
+}
+
+.nav-item:hover, .nav-link:hover {
+  background-color: #002268 !important;
+  color: white !important;
+}
+
+.link-wrapper {
+  height: 200px;
+  padding-top:10px;
+  position: relative;
+}
+
+.icon-link {
+  display: block;
+}
+
+.icon-link h3{
+  line-height: 30px;
+  margin: 0 0;
+  color: rgba(18, 53, 90, 0.65) !important;
+}
+
+.box_hover{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding-left: 5px;
+  width: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  transition: all 0.25s linear;
+  vertical-align: middle;
+  font-size: 0.01rem;
+  opacity: 0;
+}
+
+a:hover div.box_hover {
+  width: 100%;
+  opacity: 1;
+  color: #8AB0AB;
+  text-align: center;
+  font-size: 4.0rem;
+}
+
+
+.helper {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.helper+svg {
+  vertical-align: middle;
+}
+
+.icon-wrapper {
+  color: rgba(18, 53, 90, 0.65) !important;
+}
+
+.links {
+  margin-top: 40px;
+}
+
+.col-md-3.link {
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+}
+.fa-html5, .fa-css3-alt {
+  float: right;
+  margin: 0 2.5px;
+}
+
+
+
+.fa-html5 {
+  color: orange;
+}
+
+.fa-css3-alt {
+  color: black;
+}
+
+/* change the background color */
+.navbar-custom {
+    background-color: darkgray;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+/* change the color of active or hovered links */
+/*
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+*/
+#copyright {
+  width: 100%;
+  min-height: 60px;
+  background-color: darkgray;
+  vertical-align: bottom;
+  margin: 0;
+  padding-top: 30px;
+  padding-right: 40px;
+}
+
+#footer-links {
+  margin-bottom: 0;
+}
+
+#link-container {
+  padding-bottom: 20px;
+}
+
+.dropdown-menu, .dropdown-item, .dropdown-divider {
+  background-color: darkgray;
+  color: #002268;
+  border-color: #002268;
+  transition: all 0.7s ease-out;
+}
+
+.dropdown-item:hover {
+  background-color: #002268;
+  color: #FFF;
+}

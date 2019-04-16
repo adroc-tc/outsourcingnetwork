@@ -1,0 +1,102 @@
+body {
+/*  padding-top: 75px;*/
+  background: url("/img/bg1b.jpg") no-repeat top center fixed;
+  background-size: cover;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.carousel-item {
+  margin-top: 120px;
+  margin-bottom: 50px;
+  color: #03120E;
+  font-weight: 900;
+  text-shadow: -2px 0 1px #FFFFFF;
+}
+
+.tagline {
+  font-size: 72px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+a, a:hover, a:visited {
+  color: #002268;
+}
+
+#accordian {
+  background-color: transparent;
+}
+
+.card {
+  background-color: transparent;
+}
+
+.card-block {
+  background-color: rgba(0, 34, 104, 0.85);
+  color: #FBF2C0;
+  font-size: 1.65rem;
+  text-indent: 2.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.card-block>p{
+  padding: 1rem 1.75rem 2.0rem 1.75rem;
+  margin-bottom: 0;
+}
+
+.card-block a{
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.card-block a:hover{
+  color: rgba(255, 255, 255, 1);
+}
+
+.card-header {
+  background-color: rgba(206, 185, 146, 0.50);
+}
+
+.card-header>h5>a {
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+
+html {
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+}
+
+nav {
+  margin-bottom: 2rem;
+}
+#ourLogo {
+  font-size: 1.8rem;
+  color: #002268;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  height: 60px;
+  width: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators li {
+  width: 50px;
+  height: 10px;
+  padding: 0 10px;
+  margin: 0 10px;
+  box-shadow: 1px 1px 1px 1px #CCC;
+}
+
+/*
+.carousel-indicators {
+  background-color: #002268;
+}*/
+
+.weProvide {
+  list-style: disc inside;
+  padding-bottom: 20px;
+}

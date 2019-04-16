@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact HON</title>
+    <link href="/favicon.ico" type="image/x-icon" rel="icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.1.0/webcomponents-loader.js" integrity="sha256-/yxQxuxBLYpTKkkwc73/bugLt4rBmKwXmZuFucG2AVQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/nav_style.css">
+    <link rel="stylesheet" href="/stylesheets/contact.css">
+    <script defer src="/js/fontawesome-all.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+  </head>
+  <body>
+    <% include partials/navigation %>
+    <div class="container-fluid" id="top">
+      <h1 class="text-center">Thanks for visiting Today!</h1>
+      <h2 class="text-center">Please use the form below to contact us</h2>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="boxed-grey contact-form">
+            <form id="contact-form" action="/email/form-to-email.php" method="post">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">
+                      Name
+                    </label>
+                    <input type="text" name="name" class="form-control" id="name" autocomplete="name" placeholder="Enter name" required="required" />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">
+                      Email Address
+                    </label>
+                    <input name="email" type="email" autocomplete="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+                  </div>
+                  <div class="form-group">
+                    <label for="tel">
+                      Phone Number
+                    </label>
+                    <input name="tel" type="tel" autocomplete="none" class="form-control" id="tel" placeholder="please include area code" required="required" />
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="contactMethod" id="emailRadio" value="email" checked>
+                      <label class="form-check-label" for="emailRadio">
+                        Contact me by email above
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="contactMethod" id="phoneRadio" value="phone">
+                      <label class="form-check-label" for="phoneRadio">
+                        Call me at the phone number above
+                      </label>
+                    </div>
+                  </div>
+
+<!--
+                  <div class="form-group">
+                    <label for="subject">
+                      Subject
+                    </label>
+                    <select id="subject" name="subject" class="form-control" required="required" size="1">
+                      <option value="" selected="" disabled>Choose One:</option>
+                      <option value="Customer Service">Customer Service Options</option>
+                      <option value="Self pay">Self-Pay Accounts</option>
+                      <option value="Insurance">Insurance Follow-up</option>
+                    </select>
+                  </div>
+-->
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">
+                      Message
+                    </label>
+                    <textarea name="message" id="message" class="form-control" rows="5" cols="25" required="required" placeholder="Message" maxlength="500"></textarea>
+                    <p class="small">(<span id="chars"></span> characters remaining)</p>
+                  </div>
+                </div>
+                <div id="errors"></div>
+                <div class="col-md-12">
+                  <div class="g-recaptcha" data-sitekey="6LfRAVEUAAAAAJgTE0ZQDFKGOIgsLAmjr_yR9bEw"></div>
+                  <br/>
+                  <input type="submit" value="Submit">
+                </div>
+              </div>
+            </form>
+            <div id='msg_submitting'><h2>Submitting ...</h2></div>
+            <div id='msg_submitted'><h2>Thank you !<br> The form was submitted Successfully.</h2></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="widget-contact">
+            <h5>Main Office</h5>
+            <address>
+              <strong>Healthcare Outsourcing Network, L.L.C</strong><br>
+              1597 Cole Boulevard, Suite 150<br>
+              Lakewood, CO 80401&#45;3428<br>
+              <abbr title="Phone">P&#58;</abbr> (303) 296&#45;3599
+            </address>
+
+<!--
+            <address>
+              <strong>Email</strong><br>
+              <a href="mailto:#">Operations@outsourcingnetwork.com</a>
+            </address>
+-->
+          </div>
+        </div>
+      </div>
+<!--
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <h5><strong><a href="/test/hire" target="_self">Career Opportunities</a></strong></h5>
+        </div>
+      </div>
+-->
+    </div>
+    <% include partials/footer %>
+
+	<!-- /Section: contact -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/js/contact_us.js"></script>
+  </body>
+</html>

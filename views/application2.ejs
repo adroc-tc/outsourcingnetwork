@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Online Application Received</title>
+</head>
+  <body>
+    <table width="100%" style="width: 100%;">
+      <tbody>
+        <tr>
+          <td colspan="2" width="100%" style="width: 100%; text-align: center; font-weight: bold; font-size: 25px; padding-bottom: 30px;">
+            <h1>New Online Application Form Submitted</h1>
+          </td>
+        <tr>
+          <td style="text-align: right; width: 15%; font-weight: bold;">
+            Date:
+          </td>
+          <td style="width: 85%;">
+            <%= docDate %>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right; width: 15%; font-weight: bold;">
+            Name:
+          </td>
+          <td style="width: 85%;">
+            <%= lName + ', ' + fName %>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right; width: 15%; font-weight: bold;">
+            email:
+          </td>
+          <td style="width: 85%;">
+            <%= email %>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right; width: 15%; font-weight: bold;">
+            Phone:
+          </td>
+          <td style="width: 85%;">
+            <%= phone %>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" width="100%" style="width: 100%;">
+            <h2 style="text-align: center; font-weight: bold; padding-top: 30px;">Current Address</h2>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" width="100%" style="width: 100%; font-size:5px; padding-top: 0; padding-bottom 5px;">
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right; width: 15%; font-weight: bold;">
+            Street Address:
+          </td>
+          <td style="width: 85%;">
+            <%= address1 %>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right; width: 15%; font-weight: bold;">
+            City:
+          </td>
+          <td style="width: 85%;">
+            <%= city1 %>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right; width: 15%; font-weight: bold;">
+            State:
+          </td>
+          <td style="width: 85%;">
+            <%= state1 %>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right; width: 15%; font-weight: bold;">
+            Zip Code:
+          </td>
+          <td style="width: 85%;">
+            <%= zip1 %>
+          </td>
+        </tr>
+        <% if(address2 !== '') { // Previous Address is optional %>
+        <tr>
+          <td colspan="2" width="100%" style="width: 100%;">
+            <h2 style="text-align: center; font-weight: bold; padding-top: 30px;">Previous Address</h2>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" width="100%" style="width: 100%; font-size:5px; padding-top: 0; padding-bottom 5px;">
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right; width: 15%; font-weight: bold;">
+            Street Address:
+          </td>
+          <td style="width: 85%;">
+            <%= address2 %>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right; width: 15%; font-weight: bold;">
+            City:
+          </td>
+          <td style="width: 85%;">
+            <%= city2 %>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right; width: 15%; font-weight: bold;">
+            State:
+          </td>
+          <td style="width: 85%;">
+            <%= state2 %>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right; width: 15%; font-weight: bold;">
+            Zip Code:
+          </td>
+          <td style="width: 85%;">
+            <%= zip2 %>
+          </td>
+        </tr>
+        <% } //End conditonal section for optional previous address %>
+        <tr>
+          <td style="text-align: right; width: 15%; font-weight: bold;">
+            Position Desired:
+          </td>
+          <td style="width: 85%;">
+            <%= position %>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right; width: 15%; font-weight: bold;">
+            Available to start:
+          </td>
+          <td style="width: 85%;">
+            <%=  %>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right; width: 15%; font-weight: bold;">
+            State:
+          </td>
+          <td style="width: 85%;">
+            <%= state2 %>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: right; width: 15%; font-weight: bold;">
+            Zip Code:
+          </td>
+          <td style="width: 85%;">
+            <%= zip2 %>
+          </td>
+        </tr>
+        
+
+      </tbody>
+    </table>
+  </body>
+</html>

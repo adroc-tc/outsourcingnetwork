@@ -1,0 +1,51 @@
+body {
+  padding-top: 75px;
+  background: url("../img/colorado_bg.jpg") no-repeat top center fixed;
+  background-size: cover;
+  font-family: 'Quattrocento Sans', sans-serif;
+  margin-bottom: 250px;
+  padding-top: 60px;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 1.0);
+}
+
+h3 {
+  line-height: 30px;
+  display:block;
+}
+
+
+.preview_box_wrapper {
+  position: relative;
+  display: block;
+  height: 190px;
+  width: 280px;
+  padding: 30px 40px;
+  background-color: red;
+}
+
+.preview {
+  display: block;
+  color: #000 !important;
+}
+
+.hover_bar {
+  position:absolute;
+  right: 0;
+  top: 0;
+  padding-left: 5px;
+  padding-right 0;
+  width: 0;
+  height: 100%;
+  background-color: darkorange;
+  overflow: hidden;
+  color: transparent;
+  transition: 0.5s linear;
+}
+
+a:hover div.hover_bar{
+  width: 20px;
+  color: white;
+}

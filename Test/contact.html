@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact HON</title>
+    <link href="favicon.ico" type="image/x-icon" rel="icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link href="css/animate.css" rel="stylesheet" />
+    <script defer src="js/fontawesome-all.js"></script>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"><img src="img/Logo_small.png" height="50px"> Healthcare Outsourcing Network, LLC</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="leadership.html">Leadership</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="events.html">Events</a>
+              <a class="dropdown-item" href="leadership.html">Leadership</a>
+              <a class="dropdown-item" href="technology.html">Technology</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="leadership.html#kudos">Kudos</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="container">
+      <h1 class="text-center">Thanks for visiting!</h1>
+      <h2 class="text-center">Please use the form below to learn more</h2>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="boxed-grey">
+            <form id="contact-form" action="mail_handler.php" method="post">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">
+                      Name
+                    </label>
+                    <input type="text" name="name" class="form-control" id="name" autocomplete="name" placeholder="Enter name" required="required" />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">
+                      Email Address
+                    </label>
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                      </span>
+                      <input name="email" type="email" autocomplete="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="subject">
+                      Subject
+                    </label>
+                    <select id="subject" name="subject" class="form-control" required="required">
+                      <option value="na" selected="" disabled>Choose One:</option>
+                      <option value="CustomerService">Customer Service Options</option>
+                      <option value="Selfpay">Self-Pay Accounts</option>
+                      <option value="product">Insurance Follow-up</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">
+                      Message
+                    </label>
+                    <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+		<div class="col-lg-4">
+		  <div class="widget-contact">
+			<h5>Main Office</h5>
+		      <address>
+				<strong>Healthcare Outsourcing Network, L.L.C</strong><br>
+				1597 Cole Boulevard, Suite 150<br>
+				Lakewood, CO 80401&#45;3428<br>
+				<abbr title="Phone">P&#58;</abbr> (303) 296&#45;3599
+		      </address>
+
+		      <address>
+				<strong>Email</strong><br>
+				<a href="mailto:#">Operations@outsourcingnetwork.com</a>
+		      </address>
+<!--
+		      <address>
+                <strong>We're on social networks</strong><br>
+                <ul class="company-social">
+                  <li class="social-facebook"><a href="#" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a></li>
+                  <li class="social-twitter"><a href="#" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a></li>
+                  <li class="social-google"><a href="#" target="_blank"><i class="fab fa-google-plus-square fa-3x"></i></a></li>
+                </ul>
+		      </address>
+-->
+			</div>
+		  </div>
+        </div>
+        <div class="row links">
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 link">
+        <a href="about.html" class="preview">
+          <div class="link_wrapper">
+            <div class="text-center icon-link">
+              <div class="icon-wrapper"><i class="fas fa-info fa-4x"></i></div>
+              <h3>About Us</h3>
+            </div>
+            <div class="box_hover vcenter">
+              <span class="helper"></span><i class="vcenter fas fa-angle-right"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 link">
+        <a href="leadership.html" class="preview">
+          <div class="link_wrapper">
+            <div class="text-center icon-link">
+              <div class="icon-wrapper"><i class="fas fa-users fa-4x"></i></div>
+              <h3>Leadership</h3>
+            </div>
+            <div class="box_hover vcenter">
+              <span class="helper"></span><i class="vcenter fas fa-angle-right"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 link">
+        <a href="services.html" class="preview">
+          <div class="link_wrapper">
+            <div class="text-center icon-link">
+              <div class="icon-wrapper"><i class="far fa-handshake fa-4x"></i></div>
+              <h3>Services</h3>
+            </div>
+            <div class="box_hover vcenter">
+              <span class="helper"></span><i class="vcenter fas fa-angle-right"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 link">
+        <a href="technology.html" class="preview">
+          <div class="link_wrapper">
+            <div class="text-center icon-link">
+              <div class="icon-wrapper"><i class="fas fa-cogs fa-4x"></i></div>
+              <h3>Technology</h3>
+            </div>
+            <div class="box_hover vcenter">
+              <span class="helper"></span><i class="vcenter fas fa-angle-right"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 link">
+        <a href="events.html" class="preview">
+          <div class="link_wrapper">
+            <div class="text-center icon-link">
+              <div class="icon-wrapper"><i class="far fa-calendar-alt fa-4x"></i></div>
+              <h3>Events</h3>
+            </div>
+            <div class="box_hover vcenter">
+              <span class="helper"></span><i class="vcenter fas fa-angle-right"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 link">
+        <a href="contact.html" class="preview">
+          <div class="link_wrapper">
+            <div class="text-center icon-link">
+              <div class="icon-wrapper"><i class="far fa-envelope-open fa-4x"></i></div>
+              <h3>Contact Us</h3>
+            </div>
+            <div class="box_hover vcenter">
+              <span class="helper"></span><i class="vcenter fas fa-angle-right"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    </div>
+
+	<!-- /Section: contact -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

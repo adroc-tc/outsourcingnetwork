@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>iisnode logs</title>
+    <style type="text/css">
+        body
+        {
+            font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+        }
+        table
+        {
+            border-collapse: collapse;
+        }
+        td, th
+        {
+            border: 1px solid lightgray;
+            padding: 3px 7px 2px 7px;
+        }
+        th
+        {
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: Gray;
+            color: #ffffff;
+        }
+        td.stderr
+        {
+            color: Red;
+        }
+    </style>
+</head>
+<body>
+    <table id="logFilesTable">
+        <tr>
+            <th>
+                Computer name
+            </th>
+            <th>
+                PID
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Created
+            </th>
+            <th>
+                Link
+            </th>
+        </tr>
+    </table>
+    <p id="lastUpdated"></p>
+    <script type="text/javascript">
+
+        // this is replaced with actual data at runtime by code in interceptor.js
+        var logFiles = [{"file":"HCON-PORTALHOST-2232-stdout-1555028546270.txt","computername":"HCON-PORTALHOST","pid":2232,"type":"stdout","created":1555028546270},{"file":"HCON-PORTALHOST-2404-stdout-1555039886305.txt","computername":"HCON-PORTALHOST","pid":2404,"type":"stdout","created":1555039886305},{"file":"HCON-PORTALHOST-2460-stdout-1555075111651.txt","computername":"HCON-PORTALHOST","pid":2460,"type":"stdout","created":1555075111651},{"file":"HCON-PORTALHOST-2700-stdout-1555034777329.txt","computername":"HCON-PORTALHOST","pid":2700,"type":"stdout","created":1555034777329},{"file":"HCON-PORTALHOST-2776-stdout-1555025172174.txt","computername":"HCON-PORTALHOST","pid":2776,"type":"stdout","created":1555025172174},{"file":"HCON-PORTALHOST-2892-stdout-1555049757621.txt","computername":"HCON-PORTALHOST","pid":2892,"type":"stdout","created":1555049757621},{"file":"HCON-PORTALHOST-2968-stdout-1555084202694.txt","computername":"HCON-PORTALHOST","pid":2968,"type":"stdout","created":1555084202694},{"file":"HCON-PORTALHOST-2972-stdout-1555062545289.txt","computername":"HCON-PORTALHOST","pid":2972,"type":"stdout","created":1555062545289},{"file":"HCON-PORTALHOST-3280-stdout-1555055292649.txt","computername":"HCON-PORTALHOST","pid":3280,"type":"stdout","created":1555055292649},{"file":"HCON-PORTALHOST-3480-stdout-1555079851881.txt","computername":"HCON-PORTALHOST","pid":3480,"type":"stdout","created":1555079851881},{"file":"HCON-PORTALHOST-3888-stdout-1555003932002.txt","computername":"HCON-PORTALHOST","pid":3888,"type":"stdout","created":1555003932002},{"file":"HCON-PORTALHOST-3924-stdout-1555000010319.txt","computername":"HCON-PORTALHOST","pid":3924,"type":"stdout","created":1555000010319},{"file":"HCON-PORTALHOST-4084-stdout-1554997371254.txt","computername":"HCON-PORTALHOST","pid":4084,"type":"stdout","created":1554997371254},{"file":"HCON-PORTALHOST-4452-stdout-1555032446932.txt","computername":"HCON-PORTALHOST","pid":4452,"type":"stdout","created":1555032446932},{"file":"HCON-PORTALHOST-4500-stdout-1555021396029.txt","computername":"HCON-PORTALHOST","pid":4500,"type":"stdout","created":1555021396029},{"file":"HCON-PORTALHOST-4516-stdout-1555010423618.txt","computername":"HCON-PORTALHOST","pid":4516,"type":"stdout","created":1555010423618},{"file":"HCON-PORTALHOST-4924-stdout-1555059420864.txt","computername":"HCON-PORTALHOST","pid":4924,"type":"stdout","created":1555059420864},{"file":"HCON-PORTALHOST-5020-stdout-1555068512163.txt","computername":"HCON-PORTALHOST","pid":5020,"type":"stdout","created":1555068512163},{"file":"HCON-PORTALHOST-5048-stdout-1555016282388.txt","computername":"HCON-PORTALHOST","pid":5048,"type":"stdout","created":1555016282388},{"file":"HCON-PORTALHOST-596-stdout-1555077999050.txt","computername":"HCON-PORTALHOST","pid":596,"type":"stdout","created":1555077999050},{"file":"HCON-PORTALHOST-876-stdout-1555082424130.txt","computername":"HCON-PORTALHOST","pid":876,"type":"stdout","created":1555082424130}];
+        var lastUpdated = 1555084203132;
+        var date = new Date();
+
+        date.setTime(lastUpdated);
+        document.getElementById('lastUpdated').innerHTML = 'Index was last updated ' + date;
+
+        logFiles.sort(function (a, b) {
+            return b.created - a.created;
+        });
+
+        var logFilesTable = document.getElementById("logFilesTable");
+        for (var i = 0; i < logFiles.length; i++) {
+            var logFile = logFiles[i];
+            date.setTime(logFile.created);
+            var row = logFilesTable.insertRow(-1);
+            var computerNameCell = row.insertCell(0);
+            var pidCell = row.insertCell(1);
+            var typeCell = row.insertCell(2);
+            var dateCell = row.insertCell(3);
+            var logCell = row.insertCell(4);
+            computerNameCell.innerHTML = logFile.computername;
+            pidCell.innerHTML = logFile.pid.toString();
+            typeCell.innerHTML = logFile.type;
+            typeCell.setAttribute('class', logFile.type);
+            dateCell.innerHTML = date.toString();
+            logCell.innerHTML = '<a href="' + logFile.file + '">log</a>';
+        };
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+html {
+  overflow-y: scroll;
+}
+
+.container {
+  padding-top: 30px;
+  padding-bottom: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+  margin-bottom: 0;
+}
+
+.about {
+  /* Old Browsers */
+  background: rgba(0,35,104,1);
+  /* FF3.6+ */
+  background: -moz-linear-gradient(45deg, rgba(0,35,104,1) 0%, rgba(0,35,104,0.76) 18%, rgba(0,34,104,1) 60%, rgba(0,34,104,0.72) 100%);
+  /* Chrome, Safari4+ */
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,35,104,1)), color-stop(18%, rgba(0,35,104,0.76)), color-stop(60%, rgba(0,34,104,1)), color-stop(100%, rgba(0,34,104,0.72)));
+  /* Chrome10+,Safari5.1+ */
+  background: -webkit-linear-gradient(45deg, rgba(0,35,104,1) 0%, rgba(0,35,104,0.76) 18%, rgba(0,34,104,1) 60%, rgba(0,34,104,0.72) 100%);
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(45deg, rgba(0,35,104,1) 0%, rgba(0,35,104,0.76) 18%, rgba(0,34,104,1) 60%, rgba(0,34,104,0.72) 100%);
+  /* IE 10+ */
+  background: -ms-linear-gradient(45deg, rgba(0,35,104,1) 0%, rgba(0,35,104,0.76) 18%, rgba(0,34,104,1) 60%, rgba(0,34,104,0.72) 100%);
+  /* W3C */
+  background: linear-gradient(45deg, rgba(0,35,104,1) 0%, rgba(0,35,104,0.76) 18%, rgba(0,34,104,1) 60%, rgba(0,34,104,0.72) 100%);
+  /* IE6-9 fallback on horizontal gradient */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002368', endColorstr='#002268', GradientType=1 );
+}

@@ -1,0 +1,469 @@
+/* This stylesheet will manage over-all styles for all pages */
+
+html {
+  margin-bottom: 0;
+}
+
+
+body {
+  padding-top: 75px;
+  overflow-x: hidden;
+  background: url("/img/mountain_xxl.jpg") no-repeat top center;
+  background-position: top +20px center;
+  background-size: 100%;
+  font-family: 'Quattrocento Sans', sans-serif;
+  background-color: #FFF;
+}
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  body {
+    background: url("/img/mountain_xxxl.jpg") no-repeat top center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url("/img/mountain_s.jpg");
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  color: #002268;
+}
+
+p {
+  font-size: calc(15px + 0.50vw);
+}
+
+li {
+  font-size: calc(15px + 0.50vw);
+}
+
+h2 {
+  font-size: calc(32px + 1.25vw);
+}
+
+h4 {
+  font-size: calc(24px + 1.00vw);
+}
+
+h5 {
+  font-size: calc(20px + 1.0vw);
+}
+h1 {
+  font-size: calc(2.5rem + 1.25vw);
+}
+
+
+blockquote p {
+  padding-bottom: 0.5rem;
+}
+
+
+.link-block, .service-info {
+  position: relative;
+  min-height: 150px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 0.15rem;
+  border-radius: 20px;
+  text-decoration: none !important;
+  background-color: #6C777F !important;
+  transition: all 0.15s ease-in-out;
+
+/*  transition-delay: 0.05s;*/
+}
+
+.link-item {
+  margin: 1rem 0.15rem;
+}
+
+.link-pic {
+  width: 100%;
+  margin-bottom: 0.75rem;
+  display: block;
+  margin-bottom: -20px;
+  z-index: -1;
+  border: 2px solid black;
+}
+
+.service-info ul{
+  color: white !important;
+}
+
+.link-block hr, .service-info hr {
+  border-color: transparent;/*#002268;*/
+  border-width: 3px;
+  margin: 0 0 10px 0;
+}
+
+.link-block:focus {
+  outline: none;
+}
+
+.topic_name, .service-info h5 {
+  color: #002268 !important;
+  font-weight: bold;
+  font-size: 27.5px;
+  margin-bottom: 2.5px;
+}
+
+.topic_desc {
+  color: #FFF;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.topic_desc p, p.topic_desc {
+  font-size: calc(15px + 0.50vw);
+}
+
+.link-shade {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+/*  transition-delay: 0.75s;*/
+  font-size: .01rem;
+  border-bottom-right-radius: 5px 20px;
+  border-top-right-radius: 5px 20px;
+  outline: none;
+}
+
+.topic_desc p, p.topic_desc {
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover .link-block .link-shade {
+  opacity: 1;
+  background-color: #002268;
+  width: 2.25rem;
+  color: #6C777F;
+  font-size: 4.5rem;
+  outline: none;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow-y: hidden;
+}
+
+a:hover .link-block, a:hover .service-info {
+  padding-right: 2rem;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.topic_desc p, p.topic_desc {
+  transition-duration: 0.15s !important;
+}
+
+
+a:hover .topic_desc p, a:hover p.topic_desc {
+  margin-left: 5px;
+  margin-bottom: 0.125rem;
+}
+
+.link-block p {
+  margin-bottom: 0.15rem;
+  text-align: center;
+}
+
+.link-block p:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+.topic-link:hover {
+  text-decoration: none;
+}
+
+.topic-link:focus {
+  outline: none;
+}
+
+#top {
+  background-color: white;
+  margin-top: 470px;
+  padding: 30px 20px 50px 20px;
+}
+
+.top {
+  min-height: 150px;
+}
+
+.about {
+  padding: 30px 0;
+  background: rgba(0,34,102,1);
+  background: -moz-linear-gradient(-45deg, rgba(0,34,102,1) 0%, rgba(0,34,102,0.9) 25%, rgba(0,34,102,0.75) 66%, rgba(0,34,102,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,34,102,1)), color-stop(25%, rgba(0,34,102,0.9)), color-stop(66%, rgba(0,34,102,0.75)), color-stop(100%, rgba(0,34,102,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(0,34,102,1) 0%, rgba(0,34,102,0.9) 25%, rgba(0,34,102,0.75) 66%, rgba(0,34,102,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(0,34,102,1) 0%, rgba(0,34,102,0.9) 25%, rgba(0,34,102,0.75) 66%, rgba(0,34,102,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(0,34,102,1) 0%, rgba(0,34,102,0.9) 25%, rgba(0,34,102,0.75) 66%, rgba(0,34,102,1) 100%);
+  background: linear-gradient(135deg, rgba(0,34,102,1) 0%, rgba(0,34,102,0.9) 25%, rgba(0,34,102,0.75) 66%, rgba(0,34,102,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002266', endColorstr='#002266', GradientType=1 );
+  color: white !important;
+  transform: skewY(-2.5deg);
+  margin: 0px 0 150px 0;
+  min-height: 180px;
+}
+
+.about a {
+  color: #002268 !important;
+}
+
+.about {
+  margin: 0;
+}
+
+.about hr {
+  border-color: #FFF;
+}
+
+.about h1, .about h2, .about h3, .about h4, .about h5, .about h6 {
+  color: #FFF;
+}
+
+#copyright {
+  padding-top: 65px;
+  text-indent: 1.5rem;
+  padding-bottom: 50px;
+}
+
+.container-fluid {
+  background-color: white;
+  margin-bottom: 0;
+}
+
+em {
+  font-style: italic;
+}
+
+abbr {
+  text-decoration: none !important;
+}
+
+.topic-link {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.next {
+  padding-top: 20px;
+}
+
+.navs {
+/*  transform: skewX(3deg);*/
+  outline: none;
+}
+
+.long-intro {
+  padding-bottom: 80px;
+}
+
+.client-quote {
+  font-style: italic;
+  background-color: #002268;
+  background-image: url(/img/openquotes2-tb.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-indent: 20px;
+  color: #FFF;
+  font-size: 1.6rem;
+  padding: 30px 40px;
+  font-family: "Raleway", sans-serif;
+  margin-top: 2.0rem;
+  margin: 15px 0;
+  border: none;
+}
+
+.client-quote span {
+  display: block;
+  background-image: url(/img/closequotes2-tb.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.client-quote footer {
+  font-family: "Raleway", sans-serif;
+  color: #FFF;
+}
+
+.client-quote p {
+  font-size: calc(18px + 0.50vw);
+}
+
+
+.list-header {
+  margin-bottom: 0.15rem;
+}
+
+#blank-space {
+  background-attachment: local;
+  background: #FFF;
+  height: 2px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+#back-button {
+  margin-top: 50px;
+}
+
+.questions p {
+  margin: 0;
+  padding: 0.05rem; 0.5rem;
+}
+
+.questions {
+  margin: 1.5rem 0;
+}
+
+.testify {
+  background-color: #002268;
+  color: #FFF;
+}
+
+.callout {
+  /*margin: 20px 0 10px; */
+  margin-top: 35px;
+  background-color: darkgray;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.callout.lg {
+  min-height: 350px !important;
+}
+
+.callout h1 {
+  display: block;
+  color: #FFF;
+  font-size: 4.25vw;
+  text-shadow: 1px 3px rgba(0, 0, 0, 0.2), -2px 4px rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+  text-align: center;
+  text-indent: 0.125rem;
+  text-transform: capitalize;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
+}
+
+.callout.long h1 {
+  font-size: 2.25vw;
+}
+
+.callout-photo-container {
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.callout-photo-container-left {
+  display: block;
+  text-align: left;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.callout-photo-container-right {
+  display: block;
+  text-align: right;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.callout-photo {
+  height: 100%;
+  flex: none;
+}
+
+img.flip {
+/*
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+*/
+  transform: scaleX(-1);
+/*
+  filter: FlipH;
+  -ms-filter: "FlipH";*/
+}
+
+img.top {
+  width: 100%
+}
+
+.carousel-item {
+  margin-top: 5rem;
+}
+
+.container-event {
+  padding-top: 10px !important;
+}
+
+.event-tagline {
+  margin-top: 5px !important;
+}
+
+.event-header {
+  font-size: calc(28px + 1.25vw);
+}
+
+.carousel-inner .carousel-item {
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+}
+
+.page-header {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: calc(2.0rem + 1.25vw);
+}
+
+.event-name p {
+  font-size: calc(12px + 0.50vw);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.event-date p, .event-loc p {
+  font-size: calc(12px + 0.50vw);
+  margin-bottom: 5px;
+}
+
+.event-date, event-loc {
+  height: 35px;
+}
+
+.value {
+  padding: 0.75rem 0.85rem;
+  font-size: calc(12px + 1.0vw);
+}
+
+.navbar-brand {
+  font-size: calc(15px + 0.50vw);
+}
+
+.part2 {
+  margin-top: 75px;
+}
+
+.small-space {
+  padding-bottom: 20px;
+}
+
+.medium-space {
+  padding-bottom: 30px;
+}
+
+#top h3 {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+}

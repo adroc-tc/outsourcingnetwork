@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Employment</title>
+    <link href="/favicon.ico" type="image/x-icon" rel="icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/nav_style.css">
+    <link rel="stylesheet" href="/stylesheets/tab-style.css">
+    <link rel="stylesheet" href="/stylesheets/hire.css">
+    <script defer src="/js/fontawesome-all.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script src="/js/captcha.js" defer></script>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+  </head>
+  <body>
+    <% include partials/navigation %>
+    <div class="container-fluid" id="top">
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <h1><strong>Join Our Team!</strong></h1>
+          <p>
+            We are on the hunt for ambitious, customer service oriented individuals to join our dynamic team!  To be considered for employment, please send us your resume, cover letter, and complete the application below.  We look forward to getting to know you!
+          </p>
+          <form role="form" action="/test/hire" method="post" id="hireForm" enctype="multipart/form-data">
+            <div class="form-part">
+              <div class="row justify-content-end">
+                <div class="col-sm-12 col-md-2 form-group">
+                  <label for="date">Today's Date</label>
+                  <input type="date" class="form-control" id="date" name="docDate" value="<%= moment().format("YYYY-MM-DD") %>" required>
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-sm-6 col-md-3">
+                  <label for="fName">First Name</label>
+                  <input type="text" class="form-control" id="fName" name="fName" autocomplete="family-name" placeholder="First Name" required>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <label for="lName">Last Name</label>
+                  <input type="text" class="form-control" id="lName" name="lName" autocomplete="given-name" placeholder="Last Name" required>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <label for="phone">Phone</label>
+                  <input type="tel" class="form-control" id="phone" name="phone" autocomplete="tel">
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-sm-6 col-md-3">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" autocomplete="email" placeholder="email address" required>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <label for="emailConfirm">Confirm Email </label><span id="emailErr" class="error small"></span>
+                  <input type="email" class="form-control" id="emailConfirm" name="emailConfirm" autocomplete="off" placeholder="confirm email" required>
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-sm-8 col-md-6 col-lg-4">
+                  <label for="address1">Current Address</label>
+                  <input type="text" class="form-control" id="address1" name="address1" autocomplete="street-address" placeholder="(Please inlcude apt/unit number, if any)" required>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                  <label for="city1">City</label>
+                  <input type="text" class="form-control" id="city1" name="city1" autocomplete="address-level1" required>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                  <label for="state1">State</label>
+                  <select id="state1" class="form-control" name="state1" autocomplete="off" required>
+                    <option value="" disabled selected>Select State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                    <option value="AS">American Samoa</option>
+                    <option value="GU">Guam</option>
+                    <option value="MP">Northern Mariana Islands</option>
+                    <option value="PR">Puerto Rico</option>
+                    <option value="UM">United States Minor Outlying Islands</option>
+                    <option value="VI">Virgin Islands</option>
+                    <option value="AA">Armed Forces Americas</option>
+                    <option value="AP">Armed Forces Pacific</option>
+                    <option value="AE">Armed Forces Others</option>
+                  </select>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                  <label for="zip1">Zip / Postal Code</label>
+                  <input id="zip1" name="zip1" class="form-control" type="text" autocomplete="postal-code" pattern="^[0-9]{5}" required>
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-sm-8 col-md-6 col-lg-4">
+                  <label for="address2">Previous Address</label>
+                  <input type="text" class="form-control" id="address2" name="address2" autocomplete="off">
+                </div>
+                <div class="col-sm-4 col-md-2">
+                  <label for="city2">City</label>
+                  <input type="text" class="form-control" id="city2" name="city2" autocomplete="off">
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                  <label for="state2">State</label>
+                  <select id="state2" class="form-control" name="state2" autocomplete="off">
+                    <option value="nothing" disabled selected>Select State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                    <option value="AS">American Samoa</option>
+                    <option value="GU">Guam</option>
+                    <option value="MP">Northern Mariana Islands</option>
+                    <option value="PR">Puerto Rico</option>
+                    <option value="UM">United States Minor Outlying Islands</option>
+                    <option value="VI">Virgin Islands</option>
+                    <option value="AA">Armed Forces Americas</option>
+                    <option value="AP">Armed Forces Pacific</option>
+                    <option value="AE">Armed Forces Others</option>
+                  </select>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4">
+                  <label for="zip2">Zip / Postal Code</label>
+                  <input id="zip2" name="zip2" class="form-control" type="text" autocomplete="off" pattern="^[0-9]{5}">
+                </div>
+              </div>
+            </div> <!--End "Part 1"-->
+            <div class="part-header">
+              <h5>Employment Desired</h5>
+            </div>
+            <div class="form-part">
+              <div class="row form-group">
+                <div class="col-sm-8 col-md-6 col-lg-3">
+                  <label for="position">Desired Position</label>
+                  <select id="position" name="position" class="form-control" required>
+                    <option value="" disabled selected>Select Desired Position</option>
+                    <option value="Patient Rep">Patient Account Representative</option>
+                    <option value="Insurance Rep">Insurance Follow-up Representative</option>
+                    <option value="Auditing Rep">Auditing Representative</option>
+                    <option value="Floor Supervisor">Floor Supervisor</option>
+                    <option value="Manager - Ops">Manager (Operations)</option>
+                    <option value="Manager - IT">Manager (Information Technology)</option>
+                    <option value="Admin">Office Administration</option>
+                  </select>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                  <label for="start-date">Date you can start</label>
+                  <input type="date" id="start-date" class="form-control" name="startDate" required min=" <%= moment().format("YYYY-MM-DD") %>">
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                  <label for="salary">Desired salary</label>
+                  <input type="number" id="salary" class="form-control" name="salary" step="0.01" required min="10.20">
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2 align-self-end">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="salaryType" id="hourly" value="hourly" checked>
+                    <label class="form-check-label" for="hourly">
+                      Hourly Rate
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="salaryType" id="salary" value="salary">
+                    <label class="form-check-label" for="salary">
+                      Annual Salary
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-xl-2 col-lg-3 col-md-6">
+                  <label for="referred-by">Referred By</label>
+                  <input id="referred-by" name="referral" type="text" class="form-control">
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-md-6 col-sm-12 align-self-start">
+                  <h5>What Hours and Days can You Work?</h5>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="schedule" id="fullTime" value="full-time" checked>
+                    <label class="form-check-label" for="fullTime">
+                      Full-Time
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="schedule" id="partTime" value="part-time">
+                    <label class="form-check-label" for="partTime">
+                      Part-Time
+                    </label>
+                  </div>
+                  <div id="preferred">
+                    <label for="preferred-hours">Preferred Hours <span class="small">(<span id="phChars"></span> characters remaining)</span></label>
+                    <textarea wrap="off" rows="5" class="form-control" id="preferredHours" maxlength="500"></textarea>
+                  </div>
+                </div>
+                <div id="flexibility" class="col-md-6 col-sm-12 align-self-start">
+                  <h5>Are you able to be flexible in your hours?</h5>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="hours" id="flexible" value="flexible" checked>
+                    <label class="form-check-label" for="flexible">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="hours" id="not-flexible" value="not-flexible">
+                    <label class="form-check-label" for="not-flexible">
+                      No
+                    </label>
+                  </div>
+                  <div id="restrictedHours">
+                    <label for="restricted-hours">I <em>cannot</em> work the following hours <span class="small">(<span id="rhChars"></span> characters remaining)</span></label>
+                    <textarea wrap="off" rows="5" class="form-control" id="restrictedHoursTA" maxlength="500"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row form-group">
+                <div class="col-12 align-self-end">
+                  <h5 id="legalQuestion">Are you legally enitled to work in The United States? </h5>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="legalStatus" id="legal" value="entitled" checked>
+                    <label class="form-check-label" for="legal">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="legalStatus" id="not-entitled" value="not-entitled">
+                    <label class="form-check-label" for="not-entitled">
+                      No
+                    </label>
+                  </div>
+                  <p class="small">(All applicants who receive job offers must complete I-9 and identification to verify that they can work in the U.S.)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="part-header">
+              <h5>Education and Training</h5>
+            </div>
+            <div class="form-part">
+              <div class="row form-group align-items-end justify-content-center no-shade">
+                <div class="col-sm-6 col-lg-2">
+                  <h5 class="font-weight-bold">High School</h5>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <label for="hs-name">High School Name</label>
+                  <input type="text" id="hs-name" class="form-control" name="hsName" autocomplete="off" placeholder="High School Name" required>
+                </div>
+                <div class="col-sm-4 col-md-2">
+                  <label for="hs-city">City</label>
+                  <input type="text" class="form-control" id="hs-city" name="hsCity" autocomplete="off" placeholder="City" required>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                  <label for="hs-state">State</label>
+                  <select id="hs-state" class="form-control" name="hsState" autocomplete="off" required>
+                    <option value="" disabled selected>Select State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                    <option value="AS">American Samoa</option>
+                    <option value="GU">Guam</option>
+                    <option value="MP">Northern Mariana Islands</option>
+                    <option value="PR">Puerto Rico</option>
+                    <option value="UM">United States Minor Outlying Islands</option>
+                    <option value="VI">Virgin Islands</option>
+                    <option value="AA">Armed Forces Americas</option>
+                    <option value="AP">Armed Forces Pacific</option>
+                    <option value="AE">Armed Forces Others</option>
+                  </select>
+                </div>
+                <div class="col-sm-3 col-md-2 col-lg-1">
+                  <label for="hsYears">Years Completed</label>
+                  <input id="hsYears" class="form-control" name="hsYears" autocomplete="off" type="number" step="0.5" required>
+                </div>
+                <div class="col-sm-3 col-md-2 col-lg-1">
+                  <label for="hsComplete">Did you Graduate?</label>
+                  <select id="hsComplete" class="form-control" name="hsGrad" autocomplete="off" required>
+                    <option selected disabled>Select</option>
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                    <option value="in progress">Attending</option>
+                  </select>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4">
+                  <label for="hsSubj">Subjects Studied  <span class="small">(<span id="hsChars"></span> characters remaining)</span></label>
+                  <textarea id="hsSubj" name="hsSubjects" class="form-control" wrap="off" rows="5" maxlength="500"></textarea>
+                </div>
+              </div>
+              <div class="row form-group align-items-end justify-content-center shade">
+                <div class="col-sm-6 col-lg-2">
+                  <h5 class="font-weight-bold">College / University</h5>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <label for="col-name">College / University Name</label>
+                  <input type="text" id="col-name" class="form-control" name="collegeName" autocomplete="off" placeholder="College / University">
+                </div>
+                <div class="col-sm-4 col-md-2">
+                  <label for="col-city">City</label>
+                  <input type="text" class="form-control" id="col-city" name="collegeCity" autocomplete="off" placeholder="City">
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                  <label for="col-state">State</label>
+                  <select id="col-state" class="form-control" name="collegeState" autocomplete="off">
+                    <option value="" disabled selected>Select State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                    <option value="AS">American Samoa</option>
+                    <option value="GU">Guam</option>
+                    <option value="MP">Northern Mariana Islands</option>
+                    <option value="PR">Puerto Rico</option>
+                    <option value="UM">United States Minor Outlying Islands</option>
+                    <option value="VI">Virgin Islands</option>
+                    <option value="AA">Armed Forces Americas</option>
+                    <option value="AP">Armed Forces Pacific</option>
+                    <option value="AE">Armed Forces Others</option>
+                  </select>
+                </div>
+                <div class="col-sm-3 col-md-2 col-lg-1">
+                  <label for="colYears">Years Completed</label>
+                  <input id="colYears" class="form-control" name="collegeYears" autocomplete="off" type="number" step="0.5">
+                </div>
+                <div class="col-sm-3 col-md-2 col-lg-1">
+                  <label for="colComplete">Did you Graduate?</label>
+                  <select id="colComplete" class="form-control" name="collegeGrad" autocomplete="off">
+                    <option selected disabled>Select</option>
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                    <option value="in progress">Attending</option>
+                  </select>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4">
+                  <label for="colSubj">Subjects Studied <span class="small">(<span id="colChars"></span> characters remaining)</span></label>
+                  <textarea id="colSubj" name="colllegeSubjects" class="form-control" wrap="off" rows="5" maxlength="500"></textarea>
+                </div>
+              </div>
+              <div class="row form-group align-items-end justify-content-center no-shade">
+                <div class="col-sm-6 col-lg-2">
+                  <h5 class="font-weight-bold">Trade, Business, Correspondence School</h5>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <label for="os-name">Trade, Business, Correspondence School Name</label>
+                  <input type="text" id="os-name" class="form-control" name="otherSchoolName" autocomplete="off" placeholder="School Name">
+                </div>
+                <div class="col-sm-4 col-md-2">
+                  <label for="os-city">City</label>
+                  <input type="text" class="form-control" id="os-city" name="otherSchoolCity" autocomplete="off" placeholder="City">
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                  <label for="osState">State</label>
+                  <select id="osState" class="form-control" name="otherSchoolState" autocomplete="off">
+                    <option value="" disabled selected>Select State</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                    <option value="AS">American Samoa</option>
+                    <option value="GU">Guam</option>
+                    <option value="MP">Northern Mariana Islands</option>
+                    <option value="PR">Puerto Rico</option>
+                    <option value="UM">United States Minor Outlying Islands</option>
+                    <option value="VI">Virgin Islands</option>
+                    <option value="AA">Armed Forces Americas</option>
+                    <option value="AP">Armed Forces Pacific</option>
+                    <option value="AE">Armed Forces Others</option>
+                  </select>
+                </div>
+                <div class="col-sm-3 col-md-2 col-lg-1">
+                  <label for="osYears">Years Completed</label>
+                  <input id="osYears" class="form-control" name="otherSchoolYears" autocomplete="off" type="number" step="0.5">
+                </div>
+                <div class="col-sm-3 col-md-2 col-lg-1">
+                  <label for="osComplete">Did you Graduate?</label>
+                  <select id="osComplete" class="form-control" name="otherSchoolGrad" autocomplete="off">
+                    <option selected disabled>Select</option>
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                    <option value="in progress">Attending</option>
+                  </select>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-4">
+                  <label for="osSubj">Subjects Studied <span class="small">(<span id="osChars"></span> characters remaining)</span></label>
+                  <textarea id="osSubj" name="otherSchoolSubjects" class="form-control" wrap="off" rows="5" maxlength="500"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="part-header">
+              <h5>General Information</h5>
+            </div>
+            <div class="form-part">
+              <div class="row form-group align-items-end justify-content-center">
+                <div class="col-12">
+                  <h5 id="trainingQuestion">Do you have any training that is relevant to the job you are applying for, such as special training, or armed forces training?</h5>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="trainingStatus" id="trained-yes" value="trained">
+                    <label class="form-check-label" for="flexible">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="trainingStatus" id="trained-no" value="no-training" checked>
+                    <label class="form-check-label" for="not-flexible">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div id="trainingSpecial" class="row form-group align-items-end justify-content-center">
+                <div class="col-12">
+                  <label for="specialTraining">Please briefly describe the training:<span class="small helpText">(You may attach a seperate document with more detail at the bottom of this page)</span></label>
+                  <textarea id="specialTraining" name="trainingDescription" class="form-control" wrap="off" rows="8" maxlength="2500"></textarea>
+                  <p class="small">(<span id="stChars"></span> characters remaining)</p>
+                </div>
+              </div>
+            </div>
+            <div class="part-header">
+              <h5>Former Employers</h5>
+            </div>
+            <div class="form-part">
+              <div class="row form-group align-items-end no-shade">
+                <div class="col-12">
+                  <h5>
+                    Please list your previous employers below, in reverse chronological order <span class="small">(Most recent first)</span>
+                  </h5>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-3">
+                  <div class="row align-items-end">
+                    <div class="col-12 text-center">
+                      <h5><strong>Dates </strong><span><small>(exact dates aren't necessary)</small></span></h5>
+                    </div>
+                  </div>
+                  <div class="row align-items-end form-group">
+                    <div class="col-6">
+                      <label for="start_date1">Start</label>
+                      <input type="date" id="start_date1" name="startDate1" class="form-control">
+                    </div>
+                    <div class="col-6">
+                      <label for="end_date1">End</label>
+                      <input type="date" id="end_date1" name='endDate1' class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-2 form-group">
+                  <label for="employer1">Employer Name</label>
+                  <input id="employer1" name="employerName1" name='employer1' class="form-control" type="text">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-7 form-group">
+                  <label for="emp1_address">Address</label>
+                  <input id="emp1_address" name="employerAddress1" class="form-control" type="text">
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-3">
+                  <div class="row align-items-end">
+                    <div class="col-12 text-center">
+                      <h5><strong>Salary</strong></h5>
+                    </div>
+                  </div>
+                   <div class="row align-items-end form-group">
+                    <div class="col-6">
+                      <label for="start_salary1">Start</label>
+                      <input type="text" id="start_salary1" name='payStart1' class="form-control" inputmode="decimal">
+                    </div>
+                    <div class="col-6">
+                      <label for="end_salary1">End</label>
+                      <input type="text" id="end_salary1" name='payEnd1' class="form-control" inputmode="decimal">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-5 form-group">
+                  <label for="reference1">Person to contact for Reference (Include Title &amp; Phone Number)</label>
+                  <input id="reference1" name="employerRef1" class="form-control" type="text">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 form-group">
+                  <label for="reason1">Reason for leaving</label>
+                  <input id="reason1" name="reason1" class="form-control" type="text">
+                </div>
+              </div>
+              <div class="row form-group align-items-end shade">
+                <div class="col-sm-8 col-md-6 col-lg-3">
+                  <div class="row align-items-end">
+                    <div class="col-12 text-center">
+                      <h5><strong>Dates </strong><span><small>(exact dates aren't necessary)</small></span></h5>
+                    </div>
+                  </div>
+                  <div class="row align-items-end form-group">
+                    <div class="col-6">
+                      <label for="start_date2">Start</label>
+                      <input type="date" id="start_date2" name="startDate2" class="form-control">
+                    </div>
+                    <div class="col-6">
+                      <label for="end_date2">End</label>
+                      <input type="date" id="end_date2" name='endDate2' class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-2 form-group">
+                  <label for="employer2">Employer Name</label>
+                  <input id="employer2" name="employerName2" class="form-control" type="text">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-7 form-group">
+                  <label for="emp2_address">Address</label>
+                  <input id="emp2_address" name="employerAddress2" class="form-control" type="text">
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-3">
+                  <div class="row align-items-end">
+                    <div class="col-12 text-center">
+                      <h5><strong>Salary</strong></h5>
+                    </div>
+                  </div>
+                   <div class="row align-items-end form-group">
+                    <div class="col-6">
+                      <label for="start_salary2">Start</label>
+                      <input type="text" id="start_salary2" name='payStart2' class="form-control" inputmode="decimal">
+                    </div>
+                    <div class="col-6">
+                      <label for="end_salary2">End</label>
+                      <input type="text" id="end_salary2" name='payEnd2' class="form-control" inputmode="decimal">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-5 form-group">
+                  <label for="reference1">Person to contact for Reference (Title &amp; Phone Number)</label>
+                  <input id="reference1" name="reference1" class="form-control" type="text">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 form-group">
+                  <label for="reason1">Reason for leaving</label>
+                  <input id="reason1" name="reason1" class="form-control" type="text">
+                </div>
+              </div>
+              <div class="row form-group align-items-end no-shade">
+                <div class="col-sm-8 col-md-6 col-lg-3">
+                  <div class="row align-items-end">
+                    <div class="col-12 text-center">
+                      <h5><strong>Dates </strong><span><small>(exact dates aren't necessary)</small></span></h5>
+                    </div>
+                  </div>
+                  <div class="row align-items-end form-group">
+                    <div class="col-6">
+                      <label for="start_date1">Start</label>
+                      <input type="date" id="start_date1" class="form-control">
+                    </div>
+                    <div class="col-6">
+                      <label for="end_date1">End</label>
+                      <input type="date" id="end_date1" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-2 form-group">
+                  <label for="employer1">Employer Name</label>
+                  <input id="employer1" name="employerName1" class="form-control" type="text">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-7 form-group">
+                  <label for="emp1_address">Address</label>
+                  <input id="emp1_address" name="employerAddress1" class="form-control" type="text">
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-3">
+                  <div class="row align-items-end">
+                    <div class="col-12 text-center">
+                      <h5><strong>Salary</strong></h5>
+                    </div>
+                  </div>
+                   <div class="row align-items-end form-group">
+                    <div class="col-6">
+                      <label for="start_salary1">Start</label>
+                      <input type="text" id="start_salary1" class="form-control" inputmode="decimal">
+                    </div>
+                    <div class="col-6">
+                      <label for="end_salary1">End</label>
+                      <input type="text" id="end_salary1" class="form-control" inputmode="decimal">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-5 form-group">
+                  <label for="reference1">Person to contact for Reference (Title &amp; Phone Number)</label>
+                  <input id="reference1" name="reference1" class="form-control" type="text">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 form-group">
+                  <label for="reason1">Reason for leaving</label>
+                  <input id="reason1" name="reason1" class="form-control" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="part-header">
+              <h5>Work Experience</h5>
+            </div>
+            <div class="form-part">
+              <div id="work_experience" class="row form-group align-items-end justify-content-center">
+                <div class="col-12">
+                  <label for="trainingDescription">Please describe any additional work experience or achievements that is relevant to the job you want<span class="small helpText">(You may attach a seperate document with more detail at the bottom of this page)</span></label>
+                  <textarea id="trainingDescription" class="form-control" wrap="off" rows="8" maxlength="2500"></textarea>
+                  <p class="small">(<span id="tdChars"></span> characters remaining)</p>
+                </div>
+              </div>
+            </div>
+            <div class="part-header">
+              <h5>Personal References</h5>
+            </div>
+            <div class="form-part" id="references">
+              <div class="row form-group align-items-end">
+                <div class="col align-self-end">
+                  <h5>Name and Occupation</h5>
+                </div>
+                <div class="col align-self-end text-center">
+                  <h5>Email</h5>
+                </div>
+                <div class="col align-self-end text-center">
+                  <h5>Address</h5>
+                </div>
+                <div class="col align-self-end text-center">
+                  <h5>Phone Number</h5>
+                </div>
+              </div>
+              <div class="row form-group align-items-end">
+                <div class="col align-self-end">
+                  <input class="form-control" type="text" name="reference1-name" placeholder="Person - Title">
+                </div>
+                <div class="col align-self-end">
+                  <input type="email" class="form-control" name="reference1-email" placeholder="email@example.com">
+                </div>
+                <div class="col align-self-end">
+                  <input class="form-control" type="text" name="reference1-address" placeholder="Street Addres">
+                </div>
+                <div class="col align-self-end">
+                  <input class="form-control" type="tel" name="reference1-phone">
+                </div>
+              </div>
+              <div class="row form-group align-items-end">
+                <div class="col align-self-end">
+                  <input class="form-control" type="text" name="reference2-name">
+                </div>
+                <div class="col align-self-end">
+                  <input type="email" class="form-control" name="reference2-email">
+                </div>
+                <div class="col align-self-end">
+                  <input class="form-control" type="text" name="reference2-address">
+                </div>
+                <div class="col align-self-end">
+                  <input class="form-control" type="tel" name="reference2-phone">
+                </div>
+              </div>
+              <div class="row form-group align-items-end">
+                <div class="col align-self-end">
+                  <input class="form-control" type="text" name="reference2-name">
+                </div>
+                <div class="col align-self-end">
+                  <input type="email" class="form-control" name="reference1-email">
+                </div>
+                <div class="col align-self-end">
+                  <input class="form-control" type="text" name="reference3-address">
+                </div>
+                <div class="col align-self-end">
+                  <input class="form-control" type="tel" name="reference3-phone">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row form-group">
+              <div class="col-sm-6 col-lg-3 align-self-end">
+                <label for="resume">Resume Upload</label><br>
+                <p class="small errmsg"></p>
+                <input class="form-control" id="resume" type="file" name="resume" accept="application/msword, application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain" />
+              </div>
+
+
+              <div class="col-sm-6 col-lg-3 align-self-end">
+                <label for="additonal1">Additional Document</label>
+                <p class="small errmsg"></p>
+                <input class="form-control" id="additional1" type="file" name="other1" accept="application/msword, application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain" />
+              </div>
+
+              <div class="col-sm-6 col-lg-3 align-self-end">
+                <label for="additional2">Additional Document #2</label>
+                <p class="small errmsg"></p>
+                <input class="form-control" id="additional2" type="file" name="other2" accept="application/msword, application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain" />
+              </div>
+
+              <div class="col-sm-6 col-lg-3 align-self-end">
+                <label for="additional3">Additional Document #3</label>
+                <p class="small errmsg"></p>
+                <input class="form-control" id="additional3" type="file" name="other3" accept="application/msword, application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain" />
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-12 text-center">
+                <p>Only Word documents ('.doc' / '.docx'), PDF documents ('.pdf'), or Plain text ('.txt') accepted.</p>
+                <p class="small">(if you select other file types, they will be discarded)</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col form-group">
+                <div class="g-recaptcha" data-sitekey="6LfRAVEUAAAAAJgTE0ZQDFKGOIgsLAmjr_yR9bEw" data-callback="recaptcha_callback" data-expired-callback="recaptchaExpired"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col form-group">
+                <p id="reminder" class="small toggle-content is-visible">Please complete the CAPTCHA before submitting</p>
+                <button id="form-submit" disabled="disabled" type="submit" class="btn btn-lg btn-default pull-right" >Send &rarr;</button>
+              </div>
+            </div>
+          </form>
+<!--
+          <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Posted your message successfully!</h3> </div>
+          <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+-->
+        </div>
+      </div>
+    </div>
+
+    <% include partials/footer %>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/js/hire.js"></script>
+  </body>
+</html>

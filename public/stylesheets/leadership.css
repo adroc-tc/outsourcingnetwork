@@ -1,0 +1,100 @@
+body{
+  background: none;
+}
+
+img.top {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#top {
+  margin-top: 0;
+}
+
+#image-box {
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+/*  font-size: 10vw !important;*/
+}
+
+.lower-left {
+  position: absolute;
+  bottom: 10%;
+  left: 1%;
+  text-align: left;
+}
+
+.upper-left {
+  position: absolute;
+  top: 2rem;
+  left: 14rem;
+  text-align: left;
+}
+
+.top-center {
+  position: absolute;
+  top: 2.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.lower-right {
+  position: absolute;
+  bottom: 7.5rem;
+  right: 14rem;
+  text-align: right;
+}
+
+.upper-right {
+  position: absolute;
+  top: 2rem;
+  right: 14rem;
+  text-align: right;
+}
+
+
+#image-box h1, #image-box h2 {
+  color: #FFF;
+  text-shadow: 1px 3px rgba(0, 0, 0, 0.2), -2px 4px rgba(0, 0, 0, 0.19);
+  font-size: 3.0vw;
+  overflow-x: visible;
+}
+
+
+#image-box h1.lower, #image-box h2.lower {
+  font-size: 2.5vw;
+}
+
+.container {
+  background-color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+}
+
+.container-fluid {
+  background-color: white;
+}
+
+h5 {
+  padding: 0.25rem 1rem;
+}
+.about h5 {
+  padding: 0;
+}
+
+.value::first-letter {
+  text-decoration: underline;
+}
+
+.about {
+  transform: skewX(0) skewY(0);
+  margin-bottom: 0;
+}
+
+#image-box h1.lower, #image-box h2.lower {
+  font-size: 2.5vw;
+}
