@@ -29,8 +29,8 @@ let smtpConfig = {
   // },
   service: 'gmail',
   auth: {
-      user: 'xxxxxxxxx@gmail.com',
-      pass: 'xxxxx'
+      user: 'dedywahyuditc@gmail.com',
+      pass: 'Lunark1d'
     }
   // tls: {
   //   // do not fail on invalid certs
