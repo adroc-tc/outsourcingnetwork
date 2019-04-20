@@ -105,10 +105,11 @@ a h2 {
 
 #more_circle {
   margin: 0 auto;
-  width: 70px;
-  height: 70px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: white;
+  opacity: 0.5;
   color: #3E505b;
   margin-bottom: 900px;
 }
@@ -123,7 +124,15 @@ a h2 {
 
 .preview {
   display: block;
-  color: #000 !important;
+}
+
+.preview:hover{
+  text-decoration: none!important;
+}
+
+.preview:hover .link_wrapper .icon-link h3{
+  display: block;
+  text-decoration: none!important;
 }
 
 .link-wrapper {
@@ -139,7 +148,7 @@ a h2 {
 .icon-link h3{
   line-height: 30px;
   margin: 0 0;
-  color: rgba(18, 53, 90, 0.65) !important;
+  color: #12345A !important;
 }
 
 .box_hover{

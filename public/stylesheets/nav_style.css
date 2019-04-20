@@ -2,13 +2,38 @@
  *  and the stardrdized links at the bottom of the pages    */
 
 .navbar-brand, .nav-item, .nav-link {
-  color: #002268 !important;
   transition: all 0.7s ease-out;
+  font-family: 'HelveticaNeue', sans-serif;
+  padding: 0!important;
 }
 
-.nav-item:hover, .nav-link:hover {
-  background-color: #002268 !important;
-  color: white !important;
+.nav-item{
+  margin-right: 40px;
+}
+
+.nav-item.current a{
+  border-bottom: 4px solid #12345A;
+}
+
+.nav-item:hover, .nav-item:hover, .nav-link:hover {
+  color: #12345A!important;
+}
+
+.dropdown-toggle{
+  position: relative!important;
+  padding-right: 15px!important;
+}
+
+.dropdown-toggle:after{
+  display: none!important;
+  content:""!important;
+}
+
+.dropdown .fa-angle-down{
+  position: absolute!important;
+  right: 0px!important;
+  top: 5px!important;
+  color: #12345A!important;
 }
 
 .link-wrapper {
@@ -22,9 +47,10 @@
 }
 
 .icon-link h3{
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 18px;
   margin: 0 0;
-  color: rgba(18, 53, 90, 0.65) !important;
+  color: #12345A!important;
 }
 
 .box_hover{
@@ -61,7 +87,46 @@ a:hover div.box_hover {
 }
 
 .icon-wrapper {
-  color: rgba(18, 53, 90, 0.65) !important;
+  margin-bottom: 16px;
+  color: #000000 !important;
+  opacity: 0.5;
+}
+
+.icon-wrapper i {
+  display: block;
+  height: 30px;
+  width: 30px;
+  margin: 0 auto 16px auto;
+}
+
+.icon-about-us{
+  background: url("../img/icon-about-us.svg") 0 0;
+  background-size: 30px 30px;
+}
+
+.icon-leadership{
+  background: url("../img/icon-leadership.svg") 0 0;
+  background-size: 30px 30px;
+}
+
+.icon-services{
+  background: url("../img/icon-services.svg") 0 0;
+  background-size: 30px 30px;
+}
+
+.icon-technology{
+  background: url("../img/icon-technology.svg") 0 0;
+  background-size: 30px 30px;
+}
+
+.icon-events{
+  background: url("../img/icon-events.svg") 0 0;
+  background-size: 30px 30px;
+}
+
+.icon-contact{
+  background: url("../img/icon-contact.svg") 0 0;
+  background-size: 30px 30px;
 }
 
 .links {
@@ -74,31 +139,46 @@ a:hover div.box_hover {
 }
 .fa-html5, .fa-css3-alt {
   float: right;
-  margin: 0 2.5px;
+  margin: 0 6px;
 }
 
 
 
 .fa-html5 {
-  color: orange;
+  color: #E44D26;
 }
 
 .fa-css3-alt {
-  color: black;
+  color: #2965F1;
 }
 
 /* change the background color */
 .navbar-custom {
-    background-color: darkgray;
+    background-color: white;
+    height: 75px;
+}
+.navbar-custom img{
+    height: 45px;
+    width: 45px;
 }
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: rgba(255,255,255,.8);
+    color: #404244!important;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.navbar-nav{
+  margin-top: 24px;
 }
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
-    color: rgba(255,255,255,.5);
+    font-family: 'HelveticaNeue', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #12345A;
+    height: 50px;
 }
 /* change the color of active or hovered links */
 /*
@@ -109,12 +189,14 @@ a:hover div.box_hover {
 */
 #copyright {
   width: 100%;
-  min-height: 60px;
-  background-color: darkgray;
+  background-color: #F4F4F4;
   vertical-align: bottom;
   margin: 0;
-  padding-top: 30px;
-  padding-right: 40px;
+  padding-top: 50px!important;
+  padding-bottom: 50px!important;
+  padding-right: 30px;
+  font-size: 16px;
+  color: #404244;
 }
 
 #footer-links {
@@ -122,17 +204,36 @@ a:hover div.box_hover {
 }
 
 #link-container {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .dropdown-menu, .dropdown-item, .dropdown-divider {
-  background-color: darkgray;
   color: #002268;
-  border-color: #002268;
   transition: all 0.7s ease-out;
+  border-bottom: none!important;
+}
+
+.dropdown-item{
+  font-family: 'HelveticaNeue', sans-serif;
+  padding: 0.25rem 1.0rem;
+  color: #404244;
+}
+.dropdown-item.head{
+  font-family: 'HelveticaNeue', sans-serif;
+  font-weight: bold;
+  color: #404244;
+  padding: 0.25rem 0.5rem;
 }
 
 .dropdown-item:hover {
-  background-color: #002268;
-  color: #FFF;
+  color: #12345A;
+  background: white;
+}
+
+.dropdown-menu.show{
+  margin-top: -20px;
+}
+
+.navbar-nav .show>.nav-link{
+  color: #12345A!important;
 }

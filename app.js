@@ -19,6 +19,8 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
+let pagename;
+
 let smtpConfig = {
   // host: '199.184.85.73',
   // port: 25,
@@ -61,124 +63,172 @@ app.use((req, res, next) => {
 });
 
 app.get("/test", function(req, res){
-  res.render("home");
+  res.render("home", {
+    pagename: "home"
+  });
 });
 
 app.get("/test/about", function(req, res){
-  res.render("about");
+  res.render("about", {
+    pagename: "about"
+  });
 });
 
 // "about" pages
 app.get("/test/about/affiliates", function(req, res){
-  res.render("about/affiliates");
+  res.render("about/affiliates", {
+    pagename: "aboutaffiliates"
+  });
 });
 
 app.get("/test/about/feedback", function(req, res){
-  res.render("about/feedback");
+  res.render("about/feedback", {
+    pagename: "aboutfeedback"
+  });
 });
 
 app.get("/test/about/mission", function(req, res){
-  res.render("about/mission");
+  res.render("about/mission", {
+    pagename: "aboutmission"
+  });
 });
 
 app.get("/test/about/relationships", function(req, res){
-  res.render("about/relationships");
+  res.render("about/relationships", {
+    pagename: "aboutrelationships"
+  });
 });
 
 app.get("/test/about/values", function(req, res){
-  res.render("about/values");
+  res.render("about/values", {
+    pagename: "aboutvalues"
+  });
 });
 // End of "about" pages
 
 
 // Leadership Main
 app.get("/test/leadership", function(req, res){
-  res.render("leadership");
+  res.render("leadership", {
+    pagename: "leadership"
+  });
 });
 
 // *****************************************
 // ******* Leadership pages *******
 // "Team Summit"
 app.get("/test/groups/summit", function(req, res){
-  res.render("groups/leaders")
+  res.render("groups/leaders", {
+    pagename: "groupssummit"
+  });
 });
 
 // "Black Diamond Groomers"
 app.get("/test/groups/groomers", function(req, res){
-  res.render("groups/ambassadors")
+  res.render("groups/ambassadors", {
+    pagename: "groupsgroomers"
+  });
 });
 
 // "The Gold Miners"
 app.get("/test/groups/miners", function(req, res){
-  res.render("groups/tech")
+  res.render("groups/tech", {
+    pagename: "groupsminers"
+  });
 });
 
 // "Pathfinders"
 app.get("/test/groups/pathfinders", function(req, res){
-  res.render("groups/seekers")
+  res.render("groups/seekers", {
+    pagename: "groupspathfinders"
+  });
 });
 
 // "Team Shackleton"
 app.get("/test/groups/shackleton", function(req, res){
-  res.render("groups/cheerleaders")
+  res.render("groups/cheerleaders", {
+    pagename: "groupsshackleton"
+  });
 });
 
 // "First Tracks Team"
 app.get("/test/groups/team", function(req, res){
-  res.render("groups/first_impressions_team")
+  res.render("groups/first_impressions_team", {
+    pagename: "groupsteam"
+  });
 });
 // ******* End of Leadership pages *******
 // *****************************************
 
 app.get("/test/services", function(req, res){
-  res.render("services");
+  res.render("services", {
+    pagename: "services"
+  });
 });
 
 // *****************************************
 // ******* Service pages *******
 // "Training Quality Assurance"
 app.get("/test/services/training", function(req,res){
-  res.render("services/training");
+  res.render("services/training", {
+    pagename: "servicestraining"
+  });
 });
 
 // "Quality Assurance"
 app.get("/test/services/qa", function(req,res){
-  res.render("services/qa");
+  res.render("services/qa", {
+    pagename: "servicesqa"
+  });
 });
 
 // "Patient Balance Management"
 app.get("/test/services/balanceMgt", function(req,res){
-  res.render("services/early");
+  res.render("services/early", {
+    pagename: "servicesbalanceMgt"
+  });
 });
 
 // "Insurance Follow-up"
 app.get("/test/services/insurance", function(req,res){
-  res.render("services/insurance");
+  res.render("services/insurance", {
+    pagename: "servicesinsurance"
+  });
 });
 
 // "Virtual Agents With Artificial Intelligence"
 app.get("/test/services/intelligence", function(req,res){
-  res.render("services/virtual");
+  res.render("services/virtual", {
+    pagename: "servicesintelligence"
+  });
 });
 
 // "Data Analytics"
 app.get("/test/services/analytics", function(req,res){
-  res.render("services/analytics");
+  res.render("services/analytics", {
+    pagename: "servicesanalytics"
+  });
 });
 
 // "Robotic Process Automation (RPA)"
 app.get("/test/services/rpa", function(req,res){
-  res.render("services/rpa");
+  res.render("services/rpa", {
+    pagename: "servicesrpa"
+  });
 });
 
 // "Call Center Support/Patient Survey"
 app.get("/test/services/callCenter", function(req,res){
-  res.render("services/call_center");
+  res.render("services/call_center", {
+    pagename: "servicescallCenter"
+  });
 });
 
 // "Benchmarking"
 app.get("/test/services/benchmarking", function(req,res){
-  res.render("services/benchmark");
+  res.render("services/benchmark", {
+    pagename: "servicesbenchmark"
+  });
 });
 // ******* End of Service pages *******
 // *****************************************
@@ -186,33 +236,45 @@ app.get("/test/services/benchmarking", function(req,res){
 // *****************************************
 // Technology Section
 app.get("/test/technology", function(req, res){
-  res.render("technology");
+  res.render("technology", {
+    pagename: "technology"
+  });
 });
 // Technology Pages
 // "Operating System"
 app.get("/test/technologies/platform", function(req, res){
-  res.render("technologies/os")
+  res.render("technologies/os", {
+    pagename: "technologyplatform"
+  });
 });
 
 // "Telephone System"
 app.get("/test/technologies/telephone", function(req, res){
-  res.render("technologies/telephone");
+  res.render("technologies/telephone", {
+    pagename: "technologytelephone"
+  });
 });
 
 // "Business Intelligent Reporting"
 app.get("/test/technologies/reporting", function(req, res){
-  res.render("technologies/report");
+  res.render("technologies/report", {
+    pagename: "technologyreporting"
+  });
 });
 
 // "Advanced Technology"
 app.get("/test/technologies/advanced", function(req, res){
-  res.render("technologies/advanced");
+  res.render("technologies/advanced", {
+    pagename: "technologyadvanced"
+  });
 });
 // ******** End of Technology Pages ********
 // *****************************************
 
 app.get("/test/contact", function(req, res){
-  res.render("contact");
+  res.render("contact", {
+    pagename: "contact"
+  });
 });
 
 
@@ -232,13 +294,15 @@ app.get("/test/events", function(req, res){
     }
     eventData = JSON.parse(data);
     res.render("events", {events: eventData,
-                       currentDate: currentDate});
+                       currentDate: currentDate, pagename: "events"});
   });
 });
 
 
 app.get("/test/recap", function(req, res){
-  res.render("reCAPTCHA_testing");
+  res.render("reCAPTCHA_testing", {
+    pagename: "reCAPTCHA_testing"
+  });
 });
 
 app.post("/captcha", function(req, res){
@@ -263,7 +327,9 @@ app.post("/captcha", function(req, res){
 });
 
 app.get("/test/hire", function(req, res){
-  res.render("hire");
+  res.render("hire", {
+    pagename: "hire"
+  });
 });
 
 app.post("/test/hire", function(req, res){

@@ -23,14 +23,24 @@ body {
 }
 
 .tagline {
-  font-size: 3.85vw;
+  font-size: 50px;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  color: rgb(18, 53, 90);
-  margin-top: 1.75rem;
-  margin-bottom: 0.75vw;
-  text-shadow: -1px 1px 2px #FFF;
+  font-family: 'HelveticaNeue', sans-serif;
+  color: white;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.tagline b{
+  font-family: 'HelveticaNeueMedium', sans-serif!important;
+}
+
+.tagline span{
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: white;
+  margin: 20px auto 0 auto;
 }
 
 h2.tagline {
@@ -43,12 +53,10 @@ h4 {
 }
 
 .carousel-item h4 {
-  font-weight: 700;
-  font-size: 2.25vw;
-  text-shadow:  -1px 1px 0 #CCC,
-                1px -1px 0 #CCC,
-                1px 1px 0 #CCC,
-                -1px -1px 0 #CCC;
+  font-weight: 100;
+  font-size: 20px;
+  font-family: 'HelveticaNeue', sans-serif;
+  color: white;
 }
 
 .carousel-item {
@@ -89,12 +97,16 @@ a h2 {
 
 #more_circle {
   margin: 0 auto;
-  width: 70px;
-  height: 70px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: white;
-  color: #3E505b;
   margin-bottom: 30px;
+  opacity: 0.5;
+}
+
+#more_circle:hover{
+  opacity: 1;
 }
 
 .cognitive {
@@ -119,40 +131,15 @@ a h2 {
 }
 
 .intro_content {
-  padding: 0.5rem 0;
-  font-weight: 500;
-  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-family: 'HelveticaNeue' sans-serif;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #404244;
 }
 
 .container-fluid {
   background-color: transparent;
-}
-
-.testify {
-  background-color: #002268;
-  color: #FFF;
-}
-
-.client-quote {
-  font-style: italic;
-  background-color: #002268;
-  background-image: url(/img/openquotes2-tb.png);
-  background-position: top left;
-  background-repeat: no-repeat;
-  text-indent: 50px;
-  color: #FFF;
-  width: 100%;
-  font-size: 1.5rem;
-  padding: 30px 0;
-  font-family: "Raleway" sans-serif;
-  margin-top: 2.0rem;
-}
-
-.client-quote span {
-  display: block;
-  background-image: url(/img/closequotes2-tb.png);
-  background-repeat: no-repeat;
-  background-position: bottom right;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -179,6 +166,7 @@ a h2 {
 
 #scroll_down svg {
   display: inline-block;
+  margin-top: 8px;
   animation: wiggle 2.5s infinite;
 }
 

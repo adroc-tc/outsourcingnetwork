@@ -4,156 +4,167 @@
   <title>HON Home</title>
   <meta charset="utf-8">
   <link href="favicon.ico" type="image/x-icon" rel="icon">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.1.0/webcomponents-loader.js" integrity="sha256-/yxQxuxBLYpTKkkwc73/bugLt4rBmKwXmZuFucG2AVQ=" crossorigin="anonymous"></script>-->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet"> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.1.0/webcomponents-loader.js" integrity="sha256-/yxQxuxBLYpTKkkwc73/bugLt4rBmKwXmZuFucG2AVQ=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="stylesheets/fonts.css">
   <link rel="stylesheet" href="stylesheets/main.css">
   <link rel="stylesheet" href="stylesheets/nav_style.css">
   <link rel="stylesheet" href="stylesheets/style.css">
+  <!-- <link rel="stylesheet" href="semantic/dist/semantic.min.css" type="text/css"> -->
   <script defer src="js/fontawesome-all.js"></script>
 </head>
 <body>
   <% include partials/navigation %>
-  <div class="container-fluid">
-    <div class="row header">
-      <div class="col"></div>
-      <div class="col-12 text-center">
-        <h1 class="tagline">
-          Revenue Cycle Management<br>At Its Peak
-        </h1>
+
+  <div id="main-slideshow">
+    <div class="container-fluid">
+      <div class="row header">
+        <div class="col"></div>
+        <div class="col-12 text-center">
+          <h1 class="tagline">
+            Revenue Cycle Management<br><b>At Its Peak</b>
+            <span />
+          </h1>
+        </div>
+        <div class="col"></div>
       </div>
-      <div class="col"></div>
     </div>
+
+    <div class="container-fluid">
+      <div id="carouselIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h4 class="text-center banner">
+              Turning Ordinary Expectations into Extraordinary Results
+            </h4>
+          </div>
+          <div class="carousel-item">
+            <h4 class="text-center banner">
+              Thank you for Twenty Years
+            </h4>
+          </div>
+          <div class="carousel-item">
+            <h4 class="text-center banner">
+              Optimize Payments with Data Analytics
+            </h4>
+          </div>
+          <div class="carousel-item">
+            <h4 class="text-center banner">
+              Reduce Cost with Robotic Process Automation
+            </h4>
+          </div>
+          <div class="carousel-item">
+            <h4 class="text-center banner">
+              Smart Interactions with Artificial Intelligence
+            </h4>
+          </div>
+          <!--
+          <div class="carousel-item">
+          <h4 class="text-center banner">
+          Elevate the Patient Experience With a Virtual Agent
+        </h4>
+      </div>
+    -->
+  </div>
+  <!-- <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a> -->
+  </div>
   </div>
 
-  <div class="container-fluid">
-    <div id="carouselIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <h4 class="text-center banner">
-            Turning Ordinary Expectations into Extraordinary Results
-          </h4>
-        </div>
-        <div class="carousel-item">
-          <h4 class="text-center banner">
-            Thank you for Twenty Years
-          </h4>
-        </div>
-        <div class="carousel-item">
-          <h4 class="text-center banner">
-            Optimize Payments with Data Analytics
-          </h4>
-        </div>
-        <div class="carousel-item">
-          <h4 class="text-center banner">
-            Reduce Cost with Robotic Process Automation
-          </h4>
-        </div>
-        <div class="carousel-item">
-          <h4 class="text-center banner">
-            Smart Interactions with Artificial Intelligence
-          </h4>
-        </div>
-<!--
-        <div class="carousel-item">
-          <h4 class="text-center banner">
-            Elevate the Patient Experience With a Virtual Agent
-          </h4>
-        </div>
--->
-      </div>
-      <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div>
-
-<!--
+  <!--
   <div id="spacer"></div>
--->
+  -->
   <div id="see_more" class="text-center scroll">
     <a href="#intro" id="scroll_down">
-    <div id="more_circle">
-      <i class="fas fa-angle-double-down fa-4x">
-      </i>
-    </div>
+      <div id="more_circle">
+        <i class="fas fa-angle-down fa-1x">
+        </i>
+      </div>
     </a>
   </div>
-
-
-  <div class="row justify-content-end">
-    <div class="call-out col-lg-5">
-      <h4 class="cognitive"><strong>Empower Patients With A Virtual Agent </strong></h4>
-    </div>
   </div>
 
-  <div class="container-fluid main">
-    <div class="row justify-content-center">
-      <div class="col-sm-12">
-        <h1 class="text-center page-header"><strong>seeing our clients thrive in the 21st century</strong></h1>
-      </div>
-      <div class="col-sm-12 col-md-10">
-        <h3 class="intro_content" id="intro">
-          Accounts receivable management is a critical aspect of any business and is especially critical in the healthcare industry.  At Healthcare Outsourcing Network (<abbr title="Healthcare Outsourcing Network, LLC">HON</abbr>), we pride ourselves in turning ordinary expectations into extraordinary results.  We guarantee a customized early-out solution for your office that you will love because not only do we specialize in healthcare services, but in fact, it is all we do.
-        </h3>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-sm-12 col-md-10">
-        <h3 class="intro_content">
-          We service clients throughout the country and offer solutions for Self-Pay, Insurance Follow-up, Call Center Support, Patient Surveys, In-House Training, Benchmarking, Virtual Agents, Data Analytics, Process Automation, and other Advanced Technology and Reporting for the healthcare industry.
-        </h3>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-sm-12 col-md-10">
-        <h3 class="intro_content">
-         We are committed to increasing our clients&#39; revenue, boosting patient satisfaction, and promoting positive relationships between healthcare providers and their communities.
-        </h3>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-sm-12 col-md-10">
-        <h3 class="intro_content">
-          Please contact us for more information about moving your revenue cycle from the ordinary to the extraordinary.
-        </h3>
-      </div>
-    </div>
+<!-- <div class="row justify-content-end">
+  <div class="call-out col-lg-5">
+    <h4 class="cognitive"><strong>Empower Patients With A Virtual Agent </strong></h4>
+  </div>
+</div> -->
 
-    <div class="row testify justify-content-center" id="testimony">
-      <div class="col-md-8">
-        <blockquote class="client-quote">
-          <span>
-            <p>
-              The success we have had in our business office operations can be attributed to our strong partnership with HON.  Healthcare Outsourcing Network has consistently exceeded our expectations.
-            </p>
-          </span>
-          <footer class="blockquote-footer">Client Quote</footer>
-        </blockquote>
+<div class="container-fluid main">
+  <div class="row justify-content-center seeing">
+    <div class="col-sm-12 col-md-4 col-lg-4">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-12">
+          <h1 class="page-header">Seeing Our Clients Thrive In The 21st Century</h1>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-12">
+          <h3 class="intro_content" id="intro">
+            Accounts receivable management is a critical aspect of any business and is especially critical in the healthcare industry.  At Healthcare Outsourcing Network (<abbr title="Healthcare Outsourcing Network, LLC">HON</abbr>), we pride ourselves in turning ordinary expectations into extraordinary results.  We guarantee a customized early-out solution for your office that you will love because not only do we specialize in healthcare services, but in fact, it is all we do.
+          </h3>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-12">
+          <h3 class="intro_content">
+            We service clients throughout the country and offer solutions for Self-Pay, Insurance Follow-up, Call Center Support, Patient Surveys, In-House Training, Benchmarking, Virtual Agents, Data Analytics, Process Automation, and other Advanced Technology and Reporting for the healthcare industry.
+          </h3>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-12">
+          <h3 class="intro_content">
+            We are committed to increasing our clients&#39; revenue, boosting patient satisfaction, and promoting positive relationships between healthcare providers and their communities.
+          </h3>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-12">
+          <h3 class="intro_content">
+            Please contact us for more information about moving your revenue cycle from the ordinary to the extraordinary.
+          </h3>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="row callout align-items-center">
-    <div class="col-8">
-      <h1>A Burden Free Partnership with Flexibility</h1>
-    </div>
-    <div class="col-4 callout-photo-container">
-      <img class="callout-photo" src="/img/action/handshake.jpg">
+  <div class="row testify justify-content-center" id="testimony">
+    <div class="col-md-8">
+      <div class="client-quote">
+          <p>
+            The success we have had in our business office operations can be attributed to our strong partnership with HON.  Healthcare Outsourcing Network has consistently exceeded our expectations.
+          </p>
+        <footer class="blockquote-footer">Client Quote</footer>
+      </div>
     </div>
   </div>
+</div>
 
-  <% include partials/footer %>
+<div class="row callout">
+  <div class="col-12 callout-photo-container">
+    <img class="rounded-circle callout-photo" src="/img/action/handshake.jpg">
+  </div>
+  <div class="col-12">
+    <h1>A Burden Free Partnership with Flexibility</h1>
+  </div>
+</div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
+<% include partials/footer %>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- <script src="semantic/dist/semantic.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

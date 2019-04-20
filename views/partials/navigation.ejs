@@ -6,13 +6,14 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
+      <li <% if (pagename === "home") { %>class="nav-item current" <% } else { %>class="nav-item" <% } %>>
         <a class="nav-link" href="/test">Home</a>
       </li>
-      <li class="nav-item dropdown">
+      <li <% if (pagename === "about" || pagename === "aboutvalues" || pagename === "aboutrelationships" || pagename === "aboutmission" || pagename === "aboutfeedback" || pagename === "aboutaffiliates" ) { %>class="nav-item current dropdown" <% } else { %>class="nav-item dropdown" <% } %>>
         <a class="nav-link dropdown-toggle" id="navbarDropdown2" href="/test/about" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-          <a class="dropdown-item" href="/test/about">About Us</a>
+        <i class="fas fa-angle-down fa-xs"></i>
+        <div class="dropdown-menu shadow p-3 mb-5 bg-white rounded" aria-labelledby="navbarDropdown2">
+          <a class="dropdown-item head" href="/test/about">About Us</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="/test/about/mission">Mission</a>
           <a class="dropdown-item" href="/test/about/values">Values</a>
@@ -22,10 +23,11 @@
         </div>
       </li>
 
-      <li class="nav-item dropdown">
+      <li <% if (pagename === "leadership" || pagename === "groupssummit" || pagename === "groupsgroomers" || pagename === "groupsminers" || pagename === "groupspathfinders" || pagename === "groupsshackleton" || pagename === "groupsteam" ) { %>class="nav-item current dropdown" <% } else { %>class="nav-item dropdown" <% } %>>
         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="/test/about" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Leadership</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/test/leadership">Leadership</a>
+        <i class="fas fa-angle-down fa-xs"></i>
+        <div class="dropdown-menu shadow p-3 mb-5 bg-white rounded" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item head" href="/test/leadership">Leadership</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="/test/groups/summit">Team Summit</a>
           <a class="dropdown-item" href="/test/groups/groomers">Black Diamond Groomers</a>
@@ -36,10 +38,11 @@
         </div>
       </li>
 
-      <li class="nav-item dropdown">
+      <li <% if (pagename === "services" || pagename === "servicesbalanceMgt" || pagename === "servicestraining" || pagename === "servicesqa" || pagename === "servicesearly" || pagename === "servicesinsurance" || pagename === "servicesintelligence" || pagename === "servicesanalytics" || pagename === "servicesrpa" || pagename === "servicescallCenter" || pagename === "servicesbenchmark" ) { %>class="nav-item current dropdown" <% } else { %>class="nav-item dropdown" <% } %>>
         <a class="nav-link dropdown-toggle" id="navbarDropdown3" href="/test/about" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-          <a class="dropdown-item" href="/test/services">Services</a>
+        <i class="fas fa-angle-down fa-xs"></i>
+        <div class="dropdown-menu shadow p-3 mb-5 bg-white rounded" aria-labelledby="navbarDropdown3">
+          <a class="dropdown-item head" href="/test/services">Services</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="/test/services/balanceMgt">Patient Balance Management</a>
           <a class="dropdown-item" href="/test/services/insurance">Insurance Follow-up</a>
@@ -53,10 +56,11 @@
         </div>
       </li>
 
-      <li class="nav-item dropdown">
+      <li <% if (pagename === "technology" || pagename === "technologyplatform" || pagename === "technologytelephone" || pagename === "technologyreporting" || pagename === "technologyadvanced" ) { %>class="nav-item current dropdown" <% } else { %>class="nav-item dropdown" <% } %>>
         <a class="nav-link dropdown-toggle" id="navbarDropdown4" href="/test/technology" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Technology</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
-          <a class="dropdown-item" href="/test/technology">Technology</a>
+        <i class="fas fa-angle-down fa-xs"></i>
+        <div class="dropdown-menu shadow p-3 mb-5 bg-white rounded" aria-labelledby="navbarDropdown4">
+          <a class="dropdown-item head" href="/test/technology">Technology</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="/test/technologies/platform">Operating platform</a>
           <a class="dropdown-item" href="/test/technologies/telephone">Telephone System</a>
@@ -66,10 +70,10 @@
       </li>
 
 
-      <li class="nav-item">
+      <li <% if (pagename === "events") { %>class="nav-item current" <% } else { %>class="nav-item" <% } %>>
         <a class="nav-link" href="/test/events">Events</a>
       </li>
-      <li class="nav-item">
+      <li <% if (pagename === "contact") { %>class="nav-item current" <% } else { %>class="nav-item" <% } %>>
         <a class="nav-link" href="/test/contact">Contact Us</a>
       </li>
     </ul>

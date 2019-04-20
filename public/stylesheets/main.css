@@ -4,18 +4,17 @@ html {
   margin-bottom: 0;
 }
 
-
 body {
-  padding-top: 75px;
+  /* padding-top: 75px; */
   overflow-x: hidden;
-  background: url("/img/mountain_xxl.jpg") no-repeat top center;
-  background-position: top +20px center;
-  background-size: 100%;
-  font-family: 'Quattrocento Sans', sans-serif;
+  /* background: url("/img/mountain_xxl.jpg") no-repeat top center;
+  background-position: top +20px center; */
+  /* background-size: 100%; */
+  font-family: 'HelveticaNeue', sans-serif;
   background-color: #FFF;
 }
 
-@media
+/* @media
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
   body {
@@ -27,7 +26,7 @@ body {
   body {
     background-image: url("/img/mountain_s.jpg");
   }
-}
+} */
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
@@ -60,6 +59,10 @@ h1 {
 
 blockquote p {
   padding-bottom: 0.5rem;
+}
+
+a:hover{
+  text-decoration: none!important;
 }
 
 
@@ -266,37 +269,30 @@ abbr {
 }
 
 .client-quote {
-  font-style: italic;
-  background-color: #002268;
-  background-image: url(/img/openquotes2-tb.png);
-  background-position: top left;
-  background-repeat: no-repeat;
-  text-indent: 20px;
   color: #FFF;
-  font-size: 1.6rem;
-  padding: 30px 40px;
-  font-family: "Raleway", sans-serif;
-  margin-top: 2.0rem;
-  margin: 15px 0;
+  font-size: 32px;
   border: none;
-}
-
-.client-quote span {
-  display: block;
-  background-image: url(/img/closequotes2-tb.png);
-  background-repeat: no-repeat;
-  background-position: bottom right;
+  text-align: center;
+  padding: 30px;
 }
 
 .client-quote footer {
-  font-family: "Raleway", sans-serif;
+  text-align: center;
   color: #FFF;
 }
 
 .client-quote p {
-  font-size: calc(18px + 0.50vw);
+  display: block;
+  font-family: 'HelveticaNeue', sans-serif!important;
+  font-weight: 100!important;
+  font-size: 32px!important;
+  line-height: 45px;
+  margin-bottom: 100px;
 }
 
+.blockquote-footer{
+  font-size: 16px;
+}
 
 .list-header {
   margin-bottom: 0.15rem;
@@ -324,34 +320,31 @@ abbr {
 }
 
 .testify {
-  background-color: #002268;
+  padding: 30px 0;
+  background-color: #12345A!important;
   color: #FFF;
+  margin-bottom: 40px;
 }
 
 .callout {
   /*margin: 20px 0 10px; */
-  margin-top: 35px;
-  background-color: darkgray;
-  height: 350px;
+  margin-top: 0px;
+  background-color: white;
+  height: 300px;
   overflow: hidden;
   position: relative;
 }
 
 .callout.lg {
-  min-height: 350px !important;
+  min-height: 300px !important;
 }
 
 .callout h1 {
   display: block;
-  color: #FFF;
-  font-size: 4.25vw;
-  text-shadow: 1px 3px rgba(0, 0, 0, 0.2), -2px 4px rgba(0, 0, 0, 0.19);
-  font-weight: bold;
+  color: #12345A;
+  font-size: 35px;
+  font-family: 'HelveticaNeueMedium', sans-serif;
   text-align: center;
-  text-indent: 0.125rem;
-  text-transform: capitalize;
-  padding-left: 3.75rem;
-  padding-right: 3.75rem;
 }
 
 .callout.long h1 {
@@ -380,8 +373,10 @@ abbr {
 }
 
 .callout-photo {
-  height: 100%;
-  flex: none;
+  height: 166px;
+  width: 166px;
+  display: block;
+  margin: 0 auto;
 }
 
 img.flip {
@@ -423,9 +418,7 @@ img.top {
 }
 
 .page-header {
-  text-transform: capitalize;
-  text-align: center;
-  font-size: calc(2.0rem + 1.25vw);
+  font-size: 35px;
 }
 
 .event-name p {
@@ -466,4 +459,22 @@ img.top {
 
 #top h3 {
   font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+.seeing{
+  padding: 80px 0;
+}
+
+#main-slideshow{
+  margin-top: 75px;
+  height: 693px;
+  position: relative;
+  background: white url("/img/mountain_xxxl.jpg") no-repeat top center;
+  background-size: 100% 900px;
+}
+
+#see_more{
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 30px);
 }
