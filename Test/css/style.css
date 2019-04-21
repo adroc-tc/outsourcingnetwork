@@ -3,21 +3,13 @@
 
 body {
   padding-top: 75px;
-  background: url("../img/mountain_xxl.jpg") no-repeat top center fixed;
+  /* background: url("../img/mountain_xxl.jpg") no-repeat top center fixed; */
 /*  background-size: cover;*/
   font-family: 'Quattrocento Sans', sans-serif;
 }
 
-@media
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-  body {
-    background: url("../img/mountain_xxxl.jpg") no-repeat top center fixed;
-  }
-}
-
 .container {
-  Padding-top: 45px;
+  padding-top: 45px;
   background-color: rgba(255, 255, 255, 1.0);
   padding-bottom: 125px;
 }

@@ -155,7 +155,7 @@ a:hover div.box_hover {
 /* change the background color */
 .navbar-custom {
     background-color: white;
-    height: 75px;
+    padding: .5rem 1rem 0 1rem;
 }
 .navbar-custom img{
     height: 45px;
@@ -168,6 +168,7 @@ a:hover div.box_hover {
     font-family: 'Quattrocento Sans', sans-serif;
     font-weight: bold;
     font-size: 18px;
+    margin-top: 5px;
 }
 .navbar-nav{
   margin-top: 24px;

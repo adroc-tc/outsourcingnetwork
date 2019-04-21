@@ -1,32 +1,20 @@
 /* This stylesheet will manage over-all styles for all pages */
 
 html {
-  margin-bottom: 0;
+  padding: 0!important;
+  margin: 0!important;
+  overflow-x: hidden;
+  position: relative;
 }
 
 body {
-  /* padding-top: 75px; */
-  overflow-x: hidden;
-  /* background: url("/img/mountain_xxl.jpg") no-repeat top center;
-  background-position: top +20px center; */
-  /* background-size: 100%; */
+  padding: 0!important;
+  margin: 0!important;
   font-family: 'HelveticaNeue', sans-serif;
   background-color: #FFF;
+  overflow-x: hidden;
+  position: relative;
 }
-
-/* @media
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-  body {
-    background: url("/img/mountain_xxxl.jpg") no-repeat top center;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  body {
-    background-image: url("/img/mountain_s.jpg");
-  }
-} */
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;

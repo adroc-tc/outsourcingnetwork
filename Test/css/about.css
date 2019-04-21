@@ -10,15 +10,6 @@ body {
   padding-bottom: 0px;
 }
 
-@media
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-  body {
-    background: url("../img/mountain_xxxl.jpg") no-repeat top center fixed;
-  }
-}
-
-
 .tagline {
   font-size: 72px;
   font-weight: 900;
