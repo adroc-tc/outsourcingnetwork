@@ -212,6 +212,10 @@ a:hover div.box_hover {
   margin-bottom: 0;
 }
 
+#copyright .icons{
+  float: right;
+}
+
 #footer-links {
   margin-bottom: 0;
 }
@@ -265,7 +269,7 @@ a:hover div.box_hover {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(1,2,91, 1)' stroke-width='3' stroke-linecap='' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 1140px) {
   .navbar-brand img{
     float: left;
     margin-right: 10px;
@@ -328,13 +332,76 @@ a:hover div.box_hover {
   .dropdown-item {
     font-size: 14px!important;
   }
-  .dropdown-item.head{
+}
 
+@media only screen and (max-width: 992px) {
+  .navbar-brand img{
+    float: left;
+    margin-right: 10px;
+  }
+  .navbar-brand span{
+    float: left;
+    margin-top: 8px;
+    font-size: 14px!important;
+    line-height: 16px;
+    width: 160px!important;
+    word-wrap: break-word!important;
+    display: inline!important;
+    white-space: pre-wrap;
+  }
+  .navbar-collapse{
+    border-top: 1px solid #DDDDDD;
+    padding: 0 20px 0 20px;
+  }
+  .nav-item{
+    border-bottom: 1px solid #DDDDDD;
+  }
+  .navbar-nav{
+    margin-top: 0!important;
+  }
+  .nav-item{
+    margin-right: 0px!important;
+  }
+  .navbar-wrapper{
+    width: 100%;
+  }
+  .navbar-custom .navbar-nav .nav-link{
+    font-family: 'HelveticaNeueBold', sans-serif!important;
+     font-weight: normal!important;
+     font-size: 14px!important;
+     color: #404244!important;
+     height: 50px!important;
+     line-height: 50px!important;
+  }
+  .dropdown .fa-angle-down{
+    top: 20px!important;
+  }
+  .nav-item.current a{
+    border-bottom: none;
+  }
+  .nav-item .nav-link span{
+    padding: 0 10px;
+  }
+  .nav-item.current .nav-link span{
+    display: inline-block;
+    height: 50px!important;
+    line-height: 50px;
+    border-bottom: 4px solid #12345A;
+  }
+  .dropdown-menu.show{
+    padding: 5px 0px 20px 0px!important;
+    margin: 0px!important;
+    box-shadow: none!important;
+    border: none!important;
+  }
+  .dropdown-item {
+    font-size: 14px!important;
   }
   #copyright p{
     text-align: center;
   }
   #copyright .icons{
+    float: none;
     display: block;
     margin: 30px auto 0px auto;
     width: 78px;
