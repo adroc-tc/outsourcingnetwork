@@ -1,3 +1,35 @@
 .link-block {
   min-height: 295px;
 }
+
+#image-box {
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 75px;
+  height: 693px;
+  position: relative;
+  background: white url("/img/Backgrounds/leader.jpg") no-repeat top center;
+  background-size: 100% 100%;
+}
+
+#image-box .container-fluid{
+  background: none;
+}
+
+#see_more{
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 30px);
+}
+
+#image-box h4{
+  font-weight: 100;
+  font-size: 20px;
+  font-family: 'HelveticaNeueMedium', sans-serif;
+  color: white;
+  margin-bottom: 0;
+  float: left;
+  width: 100%;
+}

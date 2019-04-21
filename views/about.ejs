@@ -11,37 +11,59 @@
     <link rel="stylesheet" href="/stylesheets/main.css">
     <link rel="stylesheet" href="/stylesheets/nav_style.css">
     <link rel="stylesheet" href="/stylesheets/tab-style.css">
-     <link rel="stylesheet" href="/stylesheets/about.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/about.css">
     <script defer src="/js/fontawesome-all.js"></script>
   </head>
   <body>
      <% include partials/navigation %>
+
     <div id="image-box">
-      <img class="top" title="Boulder Creek, CO" src="/img/Backgrounds/about.jpg">
-      <div class="upper-right">
-        <h1 class="text-center">
-          <strong>
-            Clients Breathe Easier<br>With HON
-          </strong>
-        </h1>
-      </div>
-      <div class="lower-left">
-        <h1 class="lower">
-          <strong>
-            Cutting New Paths<br>Since 1998
-          </strong>
-        </h1>
+      <div class="container-fluid">
+        <div class="row header">
+          <div class="col"></div>
+          <div class="col-12 text-center">
+            <h1 class="tagline">
+              <b>Cutting New Paths</b>
+              <br>Since 1998
+              <span />
+            </h1>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row body">
+            <h4 class="text-center banner">
+              Clients Breathe Easier With HON
+            </h4>
+          </div>
+        </div>
+
+        <div id="see_more" class="text-center scroll">
+          <a href="#intro" id="scroll_down">
+            <div id="more_circle">
+              <i class="fas fa-angle-down fa-1x">
+              </i>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
 
-
-    <div class="container-fluid" id="top">
-      <div class="row justify-content-center">
-        <div class="col-md-9">
-          <h2 class="text-center"><strong>Expert Solutions, Outstanding Service</strong></h2>
-          <h3>
-            Located in Lakewood CO, we have been supporting our clients and enabling them to continue doing what they do best &#45; caring for their patients and surrounding communities &#45; since 1998.  We operate on the basic principle of building meaningful and lasting client relationships, providing outstanding customer service, and supporting our clients in actualizing their financial goals.
-          </h3>
+    <div class="container-fluid main">
+      <div class="row justify-content-center seeing">
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <div class="col-sm-12 col-md-12">
+            <h1 class="page-header">Expert Solutions, Outstanding Service</h1>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-12">
+              <h3 class="intro_content" id="intro">
+                Located in Lakewood CO, we have been supporting our clients and enabling them to continue doing what they do best &#45; caring for their patients and surrounding communities &#45; since 1998.  We operate on the basic principle of building meaningful and lasting client relationships, providing outstanding customer service, and supporting our clients in actualizing their financial goals.
+              </h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -138,26 +160,23 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid">
-      <div class="row testify justify-content-center" id="testimony">
-        <div class="col-lg-8">
-          <blockquote class="client-quote">
-            <span>
-              <p>
-                HON has treated our patients with respect and we have seen a significant reduction in customer complaints while at the same time an increase in our cash collections. HON operates as a true partner and accommodates any of our requests in a timely manner.
-              </p>
-            </span>
-            <footer class="blockquote-footer">Client Quote</footer>
-          </blockquote>
+
+    <div class="row testify justify-content-center" id="testimony">
+      <div class="col-md-10">
+        <div class="client-quote">
+            <p>
+              HON has treated our patients with respect and we have seen a significant reduction in customer complaints while at the same time an increase in our cash collections. HON operates as a true partner and accommodates any of our requests in a timely manner.
+            </p>
+          <footer class="blockquote-footer">Client Quote</footer>
         </div>
       </div>
     </div>
 
-    <div class="row callout lg align-items-center">
-      <div class="col-4 callout-photo-container">
-        <img class="callout-photo" src="/img/action/universe.jpg">
+    <div class="row callout justify-content-center">
+      <div class="col-10 callout-photo-container">
+        <img class="rounded-circle callout-photo" src="/img/action/universe.jpg">
       </div>
-      <div class="col-8">
+      <div class="col-10">
         <h1>Clients are the center of our universe</h1>
       </div>
     </div>

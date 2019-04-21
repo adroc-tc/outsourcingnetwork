@@ -39,8 +39,9 @@ blockquote {
   width: 100%;
 }
 
-.blockquote-footer {
-  color: #2E3B43 !important;
+.client-quote footer {
+  text-align: center;
+  color: #FFF;
 }
 
 blockquote span {
@@ -76,6 +77,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002266', end
   position: relative;
   text-align: center;
   color: white;
+  margin-top: 75px;
+  height: 693px;
+  position: relative;
+  background: white url("/img/Backgrounds/about.jpg") no-repeat top center;
+  background-size: 100% 100%;
+}
+
+#image-box .container-fluid{
+  background: none;
+}
+
+#see_more{
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 30px);
 }
 
 .lower-left {
@@ -113,16 +129,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002266', end
   text-align: right;
 }
 
-
-#image-box h1, #image-box h2 {
-  color: #FFF;
-  text-shadow: 1px 3px rgba(0, 0, 0, 0.2), -2px 4px rgba(0, 0, 0, 0.19);
-  font-size: 3.0vw;
-  overflow-x: visible;
+#image-box h4{
+  font-weight: 100;
+  font-size: 20px;
+  font-family: 'HelveticaNeueMedium', sans-serif;
+  color: white;
+  margin-bottom: 0;
+  float: left;
+  width: 100%;
 }
-
-
-#image-box h1.lower, #image-box h2.lower {
-  font-size: 2.5vw;
-}
-

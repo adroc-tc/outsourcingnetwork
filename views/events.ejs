@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/stylesheets/main.css">
     <link rel="stylesheet" href="/stylesheets/nav_style.css">
     <link rel="stylesheet" href="/stylesheets/calendar.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
     <link rel="stylesheet" href="/stylesheets/events.css">
     <script defer src="/js/fontawesome-all.js"></script>
   </head>
@@ -18,15 +19,35 @@
     <% include partials/navigation %>
 
     <div id="image-box">
-      <img class="top" src="/img/Backgrounds/event.jpg">
-      <div class="top-center">
-        <h1>
-          <strong>
-            Exploring New Insights &amp; New Opportunities
-          </strong>
-        </h1>
-      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col-12 text-center">
+            <h1 class="tagline shadow-sm p-3 mb-5">
+              <b>Exploring New Insights</b>
+              <br />
+              &amp; New Opportunities
+              <span />
+            </h1>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row body">
+            <h4 class="text-center banner shadow-sm p-3 mb-5">
+              Using Technology to Maximize Revenue
+            </h4>
+          </div>
+        </div>
 
+        <div id="see_more" class="text-center scroll">
+          <a href="#intro" id="scroll_down">
+            <div id="more_circle">
+              <i class="fas fa-angle-down fa-1x">
+              </i>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
 
     <div class="container container-event">

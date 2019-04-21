@@ -55,19 +55,6 @@ img.top {
   text-align: right;
 }
 
-
-#image-box h1, #image-box h2 {
-  color: #FFF;
-  text-shadow: 1px 3px rgba(0, 0, 0, 0.2), -2px 4px rgba(0, 0, 0, 0.19);
-  font-size: 3.0vw;
-  overflow-x: visible;
-}
-
-
-#image-box h1.lower, #image-box h2.lower {
-  font-size: 2.5vw;
-}
-
 .container {
   background-color: white;
   padding-top: 25px;

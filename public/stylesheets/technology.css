@@ -1,7 +1,3 @@
-.link-block, .service-info {
-  min-height: 220px;
-}
-
 #image-box {
   max-width: 100%;
   position: relative;
@@ -10,7 +6,7 @@
   margin-top: 75px;
   height: 693px;
   position: relative;
-  background: white url("/img/Backgrounds/service.jpg") no-repeat top center;
+  background: white url("/img/Backgrounds/tech.jpg") no-repeat top center;
   background-size: 100% 100%;
 }
 

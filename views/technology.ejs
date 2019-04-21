@@ -12,19 +12,45 @@
     <link rel="stylesheet" href="/stylesheets/nav_style.css">
     <link rel="stylesheet" href="/stylesheets/tab-style.css">
     <link rel="stylesheet" href="/stylesheets/leadership.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/technology.css">
     <script defer src="/js/fontawesome-all.js"></script>
   </head>
   <body>
     <% include partials/navigation %>
+
     <div id="image-box">
-      <img class="top" src="/img/Backgrounds/tech.jpg">
-      <div class="top-center">
-        <h2><strong>Bringing Big Ideas Into the Light</strong></h2>
-      </div>
-      <div class="lower-left">
-        <h1 class="lower"><strong>Using Technology<br>to Maximize Revenue</strong></h1>
+      <div class="container-fluid">
+        <div class="row header">
+          <div class="col"></div>
+          <div class="col-12 text-center">
+            <h1 class="tagline">
+              <b>Bringing Big Ideas</b>
+              <br />
+              Into the Light
+              <span />
+            </h1>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row body">
+            <h4 class="text-center banner">
+              Using Technology to Maximize Revenue
+            </h4>
+          </div>
+        </div>
+
+        <div id="see_more" class="text-center scroll">
+          <a href="#intro" id="scroll_down">
+            <div id="more_circle">
+              <i class="fas fa-angle-down fa-1x">
+              </i>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
+
     <div class="container-fluid" id="top">
       <div class="top">
         <div class="row justify-content-center">
@@ -114,30 +140,27 @@
           </div>
         </div>
       </div>
-       <div class="row testify justify-content-center" id="testimony">
-        <div class="col-lg-8">
-          <blockquote class="client-quote">
-            <span>
-              <p>
-                We do not have the sophisticated reporting and technology that HON&apos;s office can provide. HON&apos;s technology has increased our efficiency by automating processes and eliminating unnecessary bottlenecks.  They find a way to say yes to our requests.
-              </p>
-            </span>
-            <footer class="blockquote-footer">Client Quote</footer>
-          </blockquote>
+    </div>
+
+    <div class="row testify justify-content-center" id="testimony">
+      <div class="col-md-10">
+        <div class="client-quote">
+            <p>
+              We do not have the sophisticated reporting and technology that HON&apos;s office can provide. HON&apos;s technology has increased our efficiency by automating processes and eliminating unnecessary bottlenecks.  They find a way to say yes to our requests.
+            </p>
+          <footer class="blockquote-footer">Client Quote</footer>
         </div>
       </div>
     </div>
 
-    <div class="row callout align-items-center">
-      <div class="col-4 callout-photo-container">
-        <img class="callout-photo" src="/img/action/desk.jpg">
+    <div class="row callout justify-content-center">
+      <div class="col-12 callout-photo-container">
+        <img class="rounded-circle callout-photo" src="/img/action/desk.jpg">
       </div>
-       <div class="col-8">
+      <div class="col-12">
         <h1>New Solutions and New Technological Advances</h1>
       </div>
     </div>
-
-
 
     <% include partials/footer %>
 

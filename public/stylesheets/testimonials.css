@@ -21,8 +21,9 @@ blockquote p {
   margin-bottom: 1rem;
 }
 
-.blockquote-footer {
-  color: #2E3B43 !important;
+.client-quote footer {
+  text-align: center;
+  color: #FFF;
 }
 
 blockquote span {

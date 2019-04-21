@@ -1,109 +1,31 @@
-html {
-  overflow-y: scroll;
+#image-box {
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 75px;
+  height: 693px;
+  position: relative;
+  background: white url("/img/Backgrounds/event.jpg") no-repeat top center;
+  background-size: 100% 100%;
 }
 
-body {
-  background: url("/img/mountain_xxl.jpg") no-repeat top center fixed;
-/*  background-size: cover;*/
-  background-color: #FFF;
-  font-family: 'Quattrocento Sans', sans-serif;
-  /*padding-bottom: 450px;*/
-}
-
-@media
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-  body {
-    background: url("/img/mountain_xxxl.jpg") no-repeat top center fixed;
-  }
-}
-
-body{
+#image-box .container-fluid{
   background: none;
 }
 
-img.top {
-  display: block;
-  max-width: 100%;
-  margin: 0 auto;
+#see_more{
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 30px);
 }
 
-#top {
-  margin-top: 0;
-}
-
-#image-box {
-  position: relative;
-  max-width: 100%;
-  text-align: center;
+#image-box h4{
+  font-weight: 100;
+  font-size: 20px;
+  font-family: 'HelveticaNeueMedium', sans-serif;
   color: white;
-}
-
-.lower-left {
-  position: absolute;
-  bottom: 7.5rem;
-  left: 14rem;
-  text-align: left;
-}
-
-.upper-left {
-  position: absolute;
-  top: 2rem;
-  left: 14rem;
-  text-align: left;
-}
-
-.top-center {
-  position: absolute;
-  top: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.lower-right {
-  position: absolute;
-  bottom: 7.5rem;
-  right: 14rem;
-  text-align: right;
-}
-
-.upper-right {
-  position: absolute;
-  top: 2rem;
-  right: 14rem;
-  text-align: right;
-}
-
-#image-box h1, #image-box h2 {
-  color: #FFF;
-  text-shadow: 1px 3px rgba(0, 0, 0, 0.85), -2px 3px rgba(0, 0, 0, 0.65);
-  font-size: 2.5vw;
-}
-
-html, body {
-  margin: 0;
-  height: 100%;
-}
-
-.tagline {
-  font-size: 50px;
-  font-weight: 900;
-  margin-top: 2rem;
-  text-align: center;
-  letter-spacing: 0.7rem;
-  text-transform: uppercase;
-}
-
-.container {
-  padding-top: 70px;
-  background-color: white;
   margin-bottom: 0;
-  padding-bottom: 20px;
+  float: left;
+  width: 100%;
 }
-
-.event-date {
-  font-weight: 900;
-}
-
-
-

@@ -1,7 +1,5 @@
 .container-fluid.main {
-  padding-top: 15px;
-  background-color: rgba(255, 255, 255, 1.0);
-  padding-bottom: 5px;
+  background-color: white;
 }
 
 .tagline {
@@ -10,7 +8,7 @@
   font-family: 'HelveticaNeue', sans-serif;
   color: white;
   margin-top: 80px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 
 .tagline b{

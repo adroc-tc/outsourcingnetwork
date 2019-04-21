@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/stylesheets/nav_style.css">
     <link rel="stylesheet" href="/stylesheets/service.css">
     <link rel="stylesheet" href="/stylesheets/tab-style.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
     <link rel="stylesheet" href="/stylesheets/leadership.css">
     <link rel="stylesheet" href="/stylesheets/service-links.css">
     <script defer src="/js/fontawesome-all.js"></script>
@@ -20,28 +21,36 @@
     <% include partials/navigation %>
 
     <div id="image-box">
-      <img class="top" src="/img/Backgrounds/service.jpg">
-      <div class="top-center">
-        <h1>
-          <strong>
-            Join Us at the Top
-          </strong>
-        </h1>
-      </div>
-      <div class="lower-left">
-        <h1 class="lower">
-          <strong>
-            Elevate
-          </strong>
-        </h1>
-        <h1 class="lower">
-          <strong>
-            the Patient Experience
-          </strong>
-        </h1>
+      <div class="container-fluid">
+        <div class="row header">
+          <div class="col"></div>
+          <div class="col-12 text-center">
+            <h1 class="tagline">
+              <b>Join Us at the Top</b>
+              <span />
+            </h1>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row body">
+            <h4 class="text-center banner">
+              Elevate
+            </h4>
+          </div>
+        </div>
+
+        <div id="see_more" class="text-center scroll">
+          <a href="#intro" id="scroll_down">
+            <div id="more_circle">
+              <i class="fas fa-angle-down fa-1x">
+              </i>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
-<!--    <img class="top" src="/img/Backgrounds/Services/stock-photo-successful-people-targeting-the-summit-760838695.jpg">-->
+
+    <!--<img class="top" src="/img/Backgrounds/Services/stock-photo-successful-people-targeting-the-summit-760838695.jpg">-->
     <div class="container-fluid" id="top">
       <div class="top">
         <div class="row justify-content-center">
@@ -232,25 +241,24 @@
 
         </div> <!-- row        -->
       </div>   <!-- "navs" div -->
-       <div class="row testify justify-content-center" id="testimony">
-        <div class="col-lg-8">
-          <blockquote class="client-quote">
-            <span>
-              <p>
-                On more than one occasion, we have measured HON&apos;s results against other vendors and HON has consistently delivered superior results. HON is very innovative and future thinking on how to provide our organization and our community with excellent customer service. The numbers speak for themselves &#45; we have improved collections by 60&#37;.
-              </p>
-            </span>
-            <footer class="blockquote-footer">Client Quote</footer>
-          </blockquote>
-        </div>
-      </div>
     </div>     <!-- container  -->
 
-    <div class="row callout lg align-items-center">
-      <div class="col-4 callout-photo-container">
-        <img class="callout-photo flip" src="/img/action/keyboard.jpg">
+    <div class="row testify justify-content-center" id="testimony">
+      <div class="col-md-10">
+        <div class="client-quote">
+            <p>
+              On more than one occasion, we have measured HON&apos;s results against other vendors and HON has consistently delivered superior results. HON is very innovative and future thinking on how to provide our organization and our community with excellent customer service. The numbers speak for themselves &#45; we have improved collections by 60&#37;.
+            </p>
+          <footer class="blockquote-footer">Client Quote</footer>
+        </div>
       </div>
-      <div class="col-8">
+    </div>
+
+    <div class="row callout justify-content-center">
+      <div class="col-12 callout-photo-container">
+        <img class="rounded-circle callout-photo" src="/img/action/keyboard.jpg">
+      </div>
+      <div class="col-12">
         <h1>Turn Ordinary Early-Out Services Into Extraordinary Results</h1>
       </div>
     </div>
