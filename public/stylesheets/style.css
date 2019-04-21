@@ -10,7 +10,7 @@
   font-family: 'HelveticaNeue', sans-serif;
   color: white;
   margin-top: 80px;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 
 .tagline b{
@@ -37,8 +37,9 @@ h4 {
 .carousel-item h4 {
   font-weight: 100;
   font-size: 20px;
-  font-family: 'HelveticaNeue', sans-serif;
+  font-family: 'HelveticaNeueMedium', sans-serif;
   color: white;
+  margin-bottom: 0;
 }
 
 .carousel-item {
@@ -68,9 +69,15 @@ a h2 {
   height: 150px;
 }
 
+.carousel-indicators{
+  margin-bottom: 30px!important;
+}
+
 .carousel-indicators li {
-  box-shadow: 2px 2px 2px lightgray;
-  height: 5px;
+  box-shadow: none!important;
+  height: 7px!important;
+  width: 7px!important;
+  border-radius: 50%;
 }
 
 #spacer {

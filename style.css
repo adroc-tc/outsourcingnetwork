@@ -55,9 +55,14 @@ a h2 {
   height: 150px;
 }
 
+.carousel-indicators{
+  margin-bottom: 0!important;
+}
+
 .carousel-indicators li {
-  box-shadow: 2px 2px 2px lightgray;
-  height: 5px;
+  box-shadow: none!important;
+  height: 7px!important;
+  width: 7px!important;
 }
 
 #spacer {
