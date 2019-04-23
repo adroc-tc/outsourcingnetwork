@@ -51,29 +51,27 @@
       </div>
     </div>
 
-    <div class="container-fluid" id="top">
-      <div class="row top justify-content-center">
-        <div class="col-lg-12 col-xl-9">
-          <h2 class="text-center"><strong>Relationships</strong></h2>
-          <h3 class="text-center">Successful partnerships are the result of building quality relationships.</h3>
+    <div class="container-fluid">
+      <div class="row top justify-content-center medium-space">
+        <div class="col-lg-10 col-xl-10">
+          <h1 class="font-weight-bold text-center">Relationships</h1>
+          <p class="text-center">
+            Successful partnerships are the result of building quality relationships.
+          </h3>
         </div>
       </div>
-<!--
-      <div class="row justify-content-start">
-        <div class="col-sm-4 col-md-3 col-lg-2">
-          <a class="btn btn-primary btn-lg form-control" href="/test/about#navs" target="_self"><i class="fas fa-angle-double-left"></i> Back</a>
-        </div>
-      </div>
--->
+    </div>
+
+    <div class="container-fluid">
       <div class="row about justify-content-center">
-        <div class="col-lg-12 col-xl-4">
-<!--          <h5>The HON Difference</h5>-->
+        <div class="col-md-6 padding-right">
+  <!--          <h5>The HON Difference</h5>-->
           <h5>Quality Services</h5>
           <p>
             Our interest is in developing long term relationships.  Therefore, developing and nurturing the relationship with our clients is our top priority.  We will not be satisfied with our performance unless we are considered to be the most competent, responsive, cooperative, and &quot;user&#45;friendly&quot; company that our clients have ever experienced.
           </p>
         </div>
-        <div class="col-xl-5">
+        <div class="col-md-4">
           <h5>We provide exceptional service:</h5>
           <ul class="weProvide">
             <li>Doing things right the first time</li>
@@ -93,14 +91,7 @@
       </div>
     </div>
 
-    <div class="row callout justify-content-center">
-      <div class="col-10 callout-photo-container">
-        <img class="rounded-circle callout-photo" src="/img/action/together.jpg">
-      </div>
-      <div class="col-10">
-        <h1>&quot;Coming together is a beginning; keeping together is progress; working together is success.&quot; &#45; Henry Ford</h1>
-      </div>
-    </div>
+    <%- include('../partials/quote', {img: '/img/action/together.jpg', title: '&quot;Coming together is a beginning; keeping together is progress; working together is success.&quot; &#45; Henry Ford'}); %>
 
     <% include ../partials/footer %>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

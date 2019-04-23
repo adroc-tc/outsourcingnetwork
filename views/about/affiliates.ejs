@@ -9,7 +9,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.1.0/webcomponents-loader.js" integrity="sha256-/yxQxuxBLYpTKkkwc73/bugLt4rBmKwXmZuFucG2AVQ=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/stylesheets/main.css">
     <link rel="stylesheet" href="/stylesheets/nav_style.css">
-    <link rel="stylesheet" href="/stylesheets/abouts.css">
     <link rel="stylesheet" href="/stylesheets/tab-style.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
     <link rel="stylesheet" href="/stylesheets/about.css">
@@ -49,24 +48,19 @@
         </div>
       </div>
     </div>
-    
-    <div class="container-fluid" id="top">
-      <div class="row top">
-        <div class="hidden-lg-down col-xl-2"></div>
-        <div class="col-lg-12 col-xl-9 text-center">
-          <h1><strong>Affiliates</strong></h1>
-          <h3>
+
+    <div class="container-fluid">
+      <div class="row top justify-content-center medium-space">
+        <div class="col-lg-10 col-xl-10">
+          <h1 class="font-weight-bold text-center">Affiliates</h1>
+          <p class="text-center">
             Supporting Clients and Healthcare Organizations for Twenty Years.
-          </h3>
+          </p>
         </div>
       </div>
-<!--
-      <div class="row justify-content-start">
-        <div class="col-sm-4 col-md-3 col-lg-2">
-          <a class="btn btn-primary btn-lg form-control" href="/test/about#navs" target="_self"><i class="fas fa-angle-double-left"></i> Back</a>
-        </div>
-      </div>
--->
+    </div>
+
+    <div class="container-fluid" id="top">
       <div class="row about justify-content-center">
         <div class="col-lg-12 col-xl-4">
           <h5>Sharing Ideas</h5>
@@ -92,19 +86,12 @@
       </div>
     </div>
 
-    <div class="row callout justify-content-center">
-      <div class="col-10 callout-photo-container">
-        <img class="rounded-circle callout-photo" src="/img/action/transform.jpg">
-      </div>
-      <div class="col-10">
-        <h1>&quot;Every successful individual understands that his or her achievement depends on a community of persons working together.&quot; &#45; Paul Ryan</h1>
-      </div>
-    </div>
+    <%- include('../partials/quote', {img: '/img/action/transform.jpg', title: '&quot;Every successful individual understands that his or her achievement depends on a community of persons working together.&quot; &#45; Paul Ryan'}); %>
 
     <% include ../partials/footer %>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script src="/js/main.js"></script>
   </body>
 </html>

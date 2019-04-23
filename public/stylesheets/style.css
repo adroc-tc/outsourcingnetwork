@@ -7,8 +7,14 @@
   text-transform: uppercase;
   font-family: 'HelveticaNeue', sans-serif;
   color: white;
-  margin-top: 80px;
+  margin-top: 30px;
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .tagline {
+    font-size: 40px;
+  }
 }
 
 .tagline b{
@@ -44,9 +50,29 @@ h4 {
   margin-top: 2.25rem;
 }
 
-.weProvide {
-  list-style: disc inside;
-  padding-bottom: 20px;
+.weProvide{
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.weProvide li {
+  list-style: none;
+  font-family: 'HelveticaNeueMedium', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 10px;
+  color: white;
+  display: block;
+  margin-left: 20px!important;
+}
+
+
+.weProvide ::before {
+  float: left;
+  content: '■';
+  color: #707070;
+  width: 5px;
+  margin-left: -20px;
 }
 
 .thumbnail {
@@ -68,7 +94,7 @@ a h2 {
 }
 
 .carousel-indicators{
-  margin-bottom: 30px!important;
+  margin-bottom: 70px!important;
 }
 
 .carousel-indicators li {
@@ -141,7 +167,6 @@ a h2 {
 .call-out {
   margin-top: 140px;
 }
-
 
 @keyframes wiggle {
     0% { transform: rotate(0deg); }

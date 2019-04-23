@@ -8,10 +8,10 @@
   text-align: center;
   color: white;
   margin-top: 75px;
-  height: 693px;
+  height: 345px;
   position: relative;
   background: white url("/img/Backgrounds/service.jpg") no-repeat top center;
-  background-size: 100% 100%;
+  background-size: 100% 180%;
 }
 
 #image-box .container-fluid{
@@ -21,7 +21,7 @@
 #see_more{
   position: absolute;
   bottom: 0px;
-  left: calc(50% - 30px);
+  left: calc(50% - 10px);
 }
 
 #image-box h4{

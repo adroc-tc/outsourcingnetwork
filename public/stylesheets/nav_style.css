@@ -11,6 +11,10 @@
   margin-right: 40px;
 }
 
+.nav-item:last-child{
+  margin-right: 20px;
+}
+
 .nav-item.current a{
   border-bottom: 4px solid #12345A;
 }
@@ -160,7 +164,7 @@ a:hover div.box_hover {
     width: 45px;
 }
 .navbar-brand{
-  margin-left: 0.75em;
+  margin-left: 15px;
   margin-top: 15px!important;
 }
 /* change the brand and text color */
@@ -203,7 +207,6 @@ a:hover div.box_hover {
   margin: 0;
   padding-top: 50px!important;
   padding-bottom: 50px!important;
-  padding-right: 30px;
 }
 
 #copyright p{
@@ -335,6 +338,9 @@ a:hover div.box_hover {
 }
 
 @media only screen and (max-width: 992px) {
+  .link_wrapper{
+    margin-bottom: 30px;
+  }
   .navbar-brand img{
     float: left;
     margin-right: 10px;
@@ -405,10 +411,6 @@ a:hover div.box_hover {
     display: block;
     margin: 30px auto 0px auto;
     width: 78px;
-  }
-  .link_wrapper,
-  .callout{
-    margin-bottom: 60px;
   }
   .client-quote p{
     font-size: 22px!important;

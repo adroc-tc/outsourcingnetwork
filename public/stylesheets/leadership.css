@@ -77,11 +77,6 @@ h5 {
   text-decoration: underline;
 }
 
-.about {
-  transform: skewX(0) skewY(0);
-  margin-bottom: 0;
-}
-
 #image-box h1.lower, #image-box h2.lower {
   font-size: 2.5vw;
 }
