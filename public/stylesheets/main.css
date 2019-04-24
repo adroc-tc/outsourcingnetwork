@@ -183,6 +183,16 @@ a:hover .topic_desc p, a:hover p.topic_desc {
   margin-bottom: 50px;
 }
 
+.no-margin-bottom{
+  margin-bottom: 0!important;
+  padding-bottom: 0!important;
+}
+
+.no-margin-bottom .about{
+  margin-bottom: 0!important;
+  padding-bottom: 0!important;
+}
+
 .about .col-md-4{
   border-left: 1px solid rgba(255, 255, 255, .5);
 }
@@ -574,6 +584,18 @@ img.top {
   color: #404244;
 }
 
+.placeholder-card{
+  border: none!important;
+}
+
+@media (max-width: 34em) {
+  .placeholder-card{
+    display: none!important;
+  }
+  .card-block{
+    margin-bottom: 10px!important;
+  }
+}
 /*
 Small devices (landscape phones, 34em and up ( 544px ))
 */

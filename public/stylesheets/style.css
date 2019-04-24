@@ -66,8 +66,14 @@ h4 {
   margin-left: 20px!important;
 }
 
+.weProvide li ul{
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-top: 10px;
+  line-height: 26px;
+}
 
-.weProvide ::before {
+.weProvide li::before {
   float: left;
   content: '■';
   color: #707070;
