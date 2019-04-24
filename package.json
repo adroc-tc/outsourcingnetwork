@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/jkirsopp/HON_Corp#readme",
   "dependencies": {
+    "@fullcalendar/core": "^4.0.2",
+    "@fullcalendar/daygrid": "^4.0.1",
     "body-parser": "^1.18.2",
     "ejs": "^2.6.1",
     "email-templates": "^4.0.1",

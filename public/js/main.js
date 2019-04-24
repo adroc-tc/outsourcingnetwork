@@ -13,4 +13,3 @@ $(document).ready(function() {
   jQuery.fn.carousel.Constructor.TRANSITION_DURATION = 2000  // 0.05 second
   $(".carousel").carousel('next');
 });
-

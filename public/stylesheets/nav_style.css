@@ -182,8 +182,8 @@ a:hover div.box_hover {
 
 .navbar-wrapper{
   height: 75px;
-  display: block;
   overflow: hidden;
+  display: flex;
 }
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
