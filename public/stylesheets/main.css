@@ -496,7 +496,8 @@ img.top {
 
 .value {
   padding: 0.75rem 0.85rem;
-  font-size: calc(12px + 1.0vw);
+  font-size: 24px!important;
+  line-height: 40px!important;
 }
 
 .navbar-brand {

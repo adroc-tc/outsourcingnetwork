@@ -104,6 +104,12 @@ app.get("/test/about/values", function(req, res){
     pagename: "aboutvalues"
   });
 });
+
+app.get("/test/about/philosophy", function(req, res){
+  res.render("about/philosophy", {
+    pagename: "aboutphilosophy"
+  });
+});
 // End of "about" pages
 
 
