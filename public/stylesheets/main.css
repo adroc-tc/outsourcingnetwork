@@ -40,6 +40,10 @@ blockquote p {
   padding-bottom: 0.5rem;
 }
 
+#intro{
+  padding-top: 30px!important;
+}
+
 a:hover{
   text-decoration: none!important;
 }
@@ -512,8 +516,8 @@ img.top {
   padding-bottom: 20px;
 }
 
-.medium-space {
-  padding: 80px 0 40px 0!important;
+#intro.medium-space {
+  padding: 100px 0 40px 0!important;
 }
 
 .medium-space h1{
