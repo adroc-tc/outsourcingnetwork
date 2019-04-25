@@ -90,10 +90,10 @@ blockquote span {
   text-align: center;
   color: white;
   margin-top: 75px;
-  height: 345px;
+  height: 693px;
   position: relative;
   background: white url("/img/Backgrounds/about.jpg") no-repeat 100% 100%;
-  background-size: 100% 180%;
+  background-size: 100% 100%;
 }
 
 #image-box .container-fluid{
@@ -103,7 +103,7 @@ blockquote span {
 #see_more{
   position: absolute;
   bottom: 0px;
-  left: calc(50% - 10px);
+  left: calc(50% - 15px);
 }
 
 .lower-left {

@@ -4,10 +4,10 @@
   text-align: center;
   color: white;
   margin-top: 75px;
-  height: 345px;
+  height: 693px;
   position: relative;
   background: white url("/img/Backgrounds/event.jpg") no-repeat bottom center;
-  background-size: 100% 180%;
+  background-size: 100% 100%;
 }
 
 #image-box .container-fluid{

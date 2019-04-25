@@ -40,6 +40,10 @@ blockquote p {
   padding-bottom: 0.5rem;
 }
 
+.navbar-nav .dropdown-menu{
+  border-bottom: 1px solid rgba(0,0,0,.15)!important;
+}
+
 #intro{
   padding-top: 30px!important;
 }
@@ -346,7 +350,22 @@ abbr {
   font-weight: 100!important;
   font-size: 32px!important;
   line-height: 45px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
+}
+
+#calendar1{
+  position: relative;
+}
+
+.fc-close{
+color: white;}
+
+.fc-header.fc-widget-header{
+  background: #12345A!important;
+}
+
+.fc-time, .fc-title{
+  color: white!important;
 }
 
 .blockquote-footer{
@@ -679,7 +698,7 @@ Large devices (desktops, 62em and up(992px) )
 
 #main-slideshow{
   margin-top: 75px;
-  height: 345px;
+  height: 693px;
   position: relative;
   background: white url("/img/mountain_xxxl.jpg") no-repeat top center;
   background-size: 100% 900px;
