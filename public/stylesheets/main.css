@@ -698,7 +698,7 @@ Large devices (desktops, 62em and up(992px) )
 
 #main-slideshow{
   margin-top: 75px;
-  height: 693px;
+  height: 600px;
   position: relative;
   background: white url("/img/mountain_xxxl.jpg") no-repeat top center;
   background-size: 100% 900px;

@@ -90,10 +90,10 @@ blockquote span {
   text-align: center;
   color: white;
   margin-top: 75px;
-  height: 693px;
+  height: 350px;
   position: relative;
   background: white url("/img/Backgrounds/about.jpg") no-repeat 100% 100%;
-  background-size: 100% 100%;
+  background-size: 100% 150%;
 }
 
 #image-box .container-fluid{
