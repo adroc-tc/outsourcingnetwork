@@ -110,6 +110,11 @@ app.get("/test/about/philosophy", function(req, res){
     pagename: "aboutphilosophy"
   });
 });
+app.get("/test/about/customerservice", function(req, res){
+  res.render("about/customerservice", {
+    pagename: "aboutcustomerservice"
+  });
+});
 // End of "about" pages
 
 
@@ -188,7 +193,7 @@ app.get("/test/services/qa", function(req,res){
   });
 });
 
-// "Patient Balance Management"
+// "Self Pay Management"
 app.get("/test/services/balanceMgt", function(req,res){
   res.render("services/early", {
     pagename: "servicesbalanceMgt"
