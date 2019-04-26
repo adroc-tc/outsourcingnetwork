@@ -89,11 +89,11 @@ blockquote span {
   position: relative;
   text-align: center;
   color: white;
-  margin-top: 75px;
-  height: 350px;
+  margin-top: 60px;
+  height: 600px;
   position: relative;
   background: white url("/img/Backgrounds/about.jpg") no-repeat 100% 100%;
-  background-size: 100% 150%;
+  background-size: 100% 100%;
 }
 
 #image-box .container-fluid{
