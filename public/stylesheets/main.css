@@ -304,6 +304,16 @@ a:hover .topic_desc p, a:hover p.topic_desc {
   margin-bottom: 0;
 }
 
+.container-fluid.no-margin {
+  background-color: transparent!important;
+  margin-bottom: 0!important;
+  padding-bottom: 0!important;
+}
+
+.container-fluid.no-margin .about{
+  padding-bottom: 0!important;
+}
+
 em {
   font-style: italic;
 }
