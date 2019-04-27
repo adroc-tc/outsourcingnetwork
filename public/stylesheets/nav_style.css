@@ -170,7 +170,7 @@ a:hover div.box_hover {
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: #404244!important;
+    color: #00005b!important;
     font-family: 'Quattrocento Sans', sans-serif;
     font-weight: bold;
     font-size: 18px;
@@ -235,17 +235,17 @@ a:hover div.box_hover {
 .dropdown-item{
   font-family: 'HelveticaNeue', sans-serif;
   padding: 0.25rem 1.0rem;
-  color: #404244;
+  color: #12345A;
 }
 .dropdown-item.head{
   font-family: 'HelveticaNeue', sans-serif;
   font-weight: bold;
-  color: #404244;
+  color: #12345A;
   padding: 0.25rem 0.5rem;
 }
 
 .dropdown-item:hover {
-  color: #12345A;
+  color: black;
   background: white;
 }
 

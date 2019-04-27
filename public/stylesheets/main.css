@@ -265,22 +265,26 @@ a:hover .topic_desc p, a:hover p.topic_desc {
   margin-bottom: 40px!important;
 }
 
+.card-deck .card{
+  overflow: hidden;
+}
+
 .card-deck .empty{
   border: none!important;
 }
 
-.card-body a{
+.card-deck .card-body{
   position: relative;
 }
 
-.card-deck .card-body a svg{
+.card-deck a .card-body svg{
   position: absolute;
   color: #A9A9A9;
-  top: 0;
-  right: 0;
+  top: 1.125rem;
+  right: 1.125rem;
 }
 
-.card-deck .card-body a:hover svg{
+.card-deck  a:hover .card-body svg{
   color: #12345A;
 }
 
@@ -347,6 +351,14 @@ abbr {
   border: none;
   text-align: center;
   padding: 30px;
+}
+
+.client-quote svg{
+  display: block;
+  margin-bottom: 5px;
+  width: 25px;
+  height: 25px;
+  color: white;
 }
 
 .client-quote footer {
@@ -433,7 +445,9 @@ color: white;}
   color: #12345A;
   font-size: 35px;
   font-family: 'HelveticaNeueMedium', sans-serif;
+  font-weight: normal;
   text-align: center;
+  /* text-transform: uppercase; */
 }
 
 .callout.long h1 {
@@ -528,9 +542,21 @@ img.top {
 }
 
 .value {
-  padding: 0.75rem 0.85rem;
+  padding: 20px 0px;
   font-size: 24px!important;
   line-height: 40px!important;
+  margin: 10px 0;
+}
+
+.values-content{
+  display: block;
+  margin: 0 0 50px 0!important;
+  overflow: hidden;
+  background: transparent!important;
+}
+
+.values-content h1{
+  margin-bottom: 40px;
 }
 
 .navbar-brand {
@@ -575,8 +601,16 @@ img.top {
   margin: 0px auto 30px auto;
 }
 
-#feedback svg {
+#feedback svg.fa-quote-right{
   display: block;
+  margin-bottom: 10px;
+  width: 20px;
+  height: 20px;
+  color: #404244;
+}
+
+#feedback svg.fa-quote-right{
+  float: right;
   margin-bottom: 10px;
   width: 20px;
   height: 20px;
