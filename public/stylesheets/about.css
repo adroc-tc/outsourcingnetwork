@@ -92,8 +92,8 @@ blockquote span {
   margin-top: 60px;
   height: 600px;
   position: relative;
-  background: white url("/img/Backgrounds/about.jpg") no-repeat 100% 100%;
-  background-size: 100% 100%;
+  background: url("/img/Backgrounds/about.jpg") no-repeat center center;
+  background-size: 100% 140%;
 }
 
 #image-box .container-fluid{
